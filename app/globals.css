@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #050605;
+  --color-bg-card: #0a0c0a;
+  --color-bg-hover: #0f1a0a;
+
+  --color-green-bright: #5ab82a;
+  --color-green-primary: #3a8a18;
+  --color-green-border: #1a2a10;
+  --color-green-dark: #1e3a10;
+  --color-green-light: #5ab82a;
+  --color-green-text: #4a9a24;
+  --color-green-muted: #2a5a12;
+
+  --color-orange-primary: #c88a1a;
+  --color-orange-dark: #7a4a08;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #94a3b8;
+
+  /* Nova Tipografia - Estilo 'Verdade Brutal' */
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-primary);
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(58, 138, 24, 0.08) 0%, transparent 70%),
+      linear-gradient(rgba(5, 6, 5, 0.8) 0%, rgba(5, 6, 5, 0.8) 100%),
+      url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+    background-attachment: fixed;
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Efeitos de Padrão - Inspirado no cyan-cheetah */
+.pattern-overlay {
+  background-image: radial-gradient(circle at 2px 2px, rgba(58, 138, 24, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.brutal-shadow {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+.brutal-border {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(10, 12, 10, 0.6);
+  backdrop-filter: blur(12px);
+}
+
+.brutal-card {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(10, 12, 10, 0.6);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.brutal-card:hover {
+  border-color: rgba(58, 138, 24, 0.3);
+  background: rgba(15, 26, 10, 0.8);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-glow {
+  box-shadow: 0 0 20px rgba(58, 138, 24, 0.15);
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050605;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2a10;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a8a18;
+}

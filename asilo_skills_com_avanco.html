@@ -1,0 +1,168 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0c09;color:#c8d4b8;font-family:system-ui,sans-serif;padding:16px}
+.section{margin-bottom:20px}
+.section-title{font-size:8px;letter-spacing:4px;color:#2a5a12;text-transform:uppercase;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid #1a2a10}
+.skill-block{background:#0c0f0a;border:1px solid #1a2a10;border-radius:2px;margin-bottom:8px;overflow:hidden}
+.skill-main{display:flex;align-items:center;gap:8px;padding:8px 10px;border-bottom:1px solid #0f1a0a}
+.skill-icon{width:28px;height:28px;background:#1a3a0a;border:1px solid #2a6a14;border-radius:2px;flex-shrink:0}
+.skill-type-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dot-basic{background:#3a8a18}
+.dot-core{background:#6aaa2a}
+.dot-def{background:#4a7a24}
+.dot-ult{background:#8a6a10}
+.dot-passive{background:#2a4a18}
+.skill-name-input{flex:1;background:#0a0c09;border:1px solid #1a2a10;color:#8ab84a;font-size:11px;padding:4px 8px;border-radius:1px;outline:none}
+.skill-name-input::placeholder{color:#1a3a10;font-size:10px}
+.pts-wrap{display:flex;align-items:center;gap:4px;flex-shrink:0}
+.pts-label{font-size:8px;color:#2a5a12;letter-spacing:1px;text-transform:uppercase}
+.pts-select{background:#0a0c09;border:1px solid #1a2a10;color:#4a9a24;font-size:11px;padding:3px 5px;border-radius:1px;outline:none;width:44px}
+
+.upgrades{padding:6px 10px 8px 46px;background:#0a0f0a}
+.upgrade-row{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.upgrade-line{width:14px;height:1px;background:#1a3010;flex-shrink:0}
+.upgrade-label{font-size:8px;letter-spacing:1px;color:#1e4010;text-transform:uppercase;flex-shrink:0;width:58px}
+.upgrade-input{flex:1;background:#0a0c09;border:1px solid #0f1a0a;color:#5a8a2a;font-size:10px;padding:3px 6px;border-radius:1px;outline:none}
+.upgrade-input::placeholder{color:#1a3010;font-size:9px}
+.upgrade-pts{background:#0a0c09;border:1px solid #0f1a0a;color:#3a6a18;font-size:10px;padding:3px 5px;border-radius:1px;outline:none;width:40px}
+.or-divider{font-size:8px;color:#1a3010;padding:1px 0 1px 78px;letter-spacing:2px}
+</style>
+
+<div class="section">
+  <div class="section-title">Básica</div>
+
+  <div class="skill-block">
+    <div class="skill-main">
+      <div class="skill-icon"></div>
+      <div class="skill-type-dot dot-basic"></div>
+      <input class="skill-name-input" placeholder="Nome da habilidade básica" value="Espeto Trovejante" />
+      <div class="pts-wrap">
+        <span class="pts-label">pts</span>
+        <select class="pts-select"><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select>
+      </div>
+    </div>
+    <div class="upgrades">
+      <div class="upgrade-row">
+        <div class="upgrade-line"></div>
+        <span class="upgrade-label">Aprimorado</span>
+        <input class="upgrade-input" placeholder="Nome do avanço aprimorado" value="Espeto Aprimorado" />
+        <select class="upgrade-pts"><option selected>1</option></select>
+      </div>
+      <div class="upgrade-row">
+        <div class="upgrade-line"></div>
+        <span class="upgrade-label">Avanço A</span>
+        <input class="upgrade-input" placeholder="Nome do avanço A" value="Espeto Invocado" />
+        <select class="upgrade-pts"><option selected>1</option></select>
+      </div>
+      <div class="or-divider">ou</div>
+      <div class="upgrade-row">
+        <div class="upgrade-line"></div>
+        <span class="upgrade-label">Avanço B</span>
+        <input class="upgrade-input" placeholder="Nome do avanço B" value="Espeto Sagrado" />
+        <select class="upgrade-pts"><option selected>1</option></select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Principal</div>
+
+  <div class="skill-block">
+    <div class="skill-main">
+      <div class="skill-icon"></div>
+      <div class="skill-type-dot dot-core"></div>
+      <input class="skill-name-input" placeholder="Nome da habilidade principal" value="Escoriar" />
+      <div class="pts-wrap">
+        <span class="pts-label">pts</span>
+        <select class="pts-select"><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option></select>
+      </div>
+    </div>
+    <div class="upgrades">
+      <div class="upgrade-row">
+        <div class="upgrade-line"></div>
+        <span class="upgrade-label">Aprimorado</span>
+        <input class="upgrade-input" placeholder="Nome do avanço aprimorado" />
+        <select class="upgrade-pts"><option selected>1</option></select>
+      </div>
+      <div class="upgrade-row">
+        <div class="upgrade-line"></div>
+        <span class="upgrade-label">Avanço A</span>
+        <input class="upgrade-input" placeholder="Nome do avanço A" />
+        <select class="upgrade-pts"><option selected>1</option></select>
+      </div>
+      <div class="or-divider">ou</div>
+      <div class="upgrade-row">
+        <div class="upgrade-line"></div>
+        <span class="upgrade-label">Avanço B</span>
+        <input class="upgrade-input" placeholder="Nome do avanço B" />
+        <select class="upgrade-pts"><option selected>1</option></select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Passivas</div>
+
+  <div class="skill-block">
+    <div class="skill-main">
+      <div class="skill-icon" style="background:#0f1a0a;border-color:#1a3010"></div>
+      <div class="skill-type-dot dot-passive"></div>
+      <input class="skill-name-input" placeholder="Nome da passiva" value="Renovação" />
+      <div class="pts-wrap">
+        <span class="pts-label">pts</span>
+        <select class="pts-select"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-block">
+    <div class="skill-main">
+      <div class="skill-icon" style="background:#0f1a0a;border-color:#1a3010"></div>
+      <div class="skill-type-dot dot-passive"></div>
+      <input class="skill-name-input" placeholder="Nome da passiva" />
+      <div class="pts-wrap">
+        <span class="pts-label">pts</span>
+        <select class="pts-select"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Ultimate</div>
+  <div class="skill-block">
+    <div class="skill-main">
+      <div class="skill-icon" style="background:#2a1a00;border-color:#6a4a00"></div>
+      <div class="skill-type-dot dot-ult"></div>
+      <input class="skill-name-input" placeholder="Nome da habilidade ultimate" />
+      <div class="pts-wrap">
+        <span class="pts-label">pts</span>
+        <select class="pts-select"><option selected>1</option></select>
+      </div>
+    </div>
+    <div class="upgrades">
+      <div class="upgrade-row">
+        <div class="upgrade-line"></div>
+        <span class="upgrade-label">Aprimorado</span>
+        <input class="upgrade-input" placeholder="Nome do avanço" />
+        <select class="upgrade-pts"><option selected>1</option></select>
+      </div>
+      <div class="upgrade-row">
+        <div class="upgrade-line"></div>
+        <span class="upgrade-label">Avanço A</span>
+        <input class="upgrade-input" placeholder="Nome do avanço A" />
+        <select class="upgrade-pts"><option selected>1</option></select>
+      </div>
+      <div class="or-divider">ou</div>
+      <div class="upgrade-row">
+        <div class="upgrade-line"></div>
+        <span class="upgrade-label">Avanço B</span>
+        <input class="upgrade-input" placeholder="Nome do avanço B" />
+        <select class="upgrade-pts"><option selected>1</option></select>
+      </div>
+    </div>
+  </div>
+</div>
