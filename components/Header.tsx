@@ -22,20 +22,14 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 overflow-visible transition-colors duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-500 ${
         scrolled || open ? 'bg-[#050605]/90 border-b border-green-border/50' : 'bg-transparent border-b border-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 h-[5.25rem] flex items-center gap-8 overflow-visible">
-        <Link href="/" className="shrink-0 mt-3 hover:scale-[1.04] transition-transform duration-300">
-          <img
-            src="/images/logo.png"
-            alt="ASILO"
-            className="w-24 h-24 md:w-[6.75rem] md:h-[6.75rem] rounded-full border border-green-primary/50 object-cover shadow-[0_12px_40px_rgba(0,0,0,0.65)]"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none'
-            }}
-          />
+      <div className="max-w-7xl mx-auto px-5 h-[5.25rem] flex items-center gap-8">
+        <Link href="/" id="asilo-brand">
+          <img id="asilo-logo" src="/images/d4-1.png" alt="" width={52} height={52} />
+          <span id="asilo-wordmark">ASILO</span>
         </Link>
 
         <nav className="hidden lg:flex ml-auto items-center gap-4 xl:gap-7">
