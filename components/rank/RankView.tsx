@@ -78,7 +78,10 @@ export default function RankView({ initial }: { initial: ClanRun[] }) {
         <label className="block text-xs text-green-muted mb-2">Classe</label>
         <select
           value={class_id}
-          onChange={(e) => setClass(e.target.value)}
+          onChange={(e) => {
+            const next = PLAYABLE_CLASSES.find((c) => c.id === e.target.value)
+            if (next) setClass(next.id)
+          }}
           className="w-full mb-4 bg-[#050605] border border-green-border px-3 py-3 text-white"
         >
           {PLAYABLE_CLASSES.map((c) => (
