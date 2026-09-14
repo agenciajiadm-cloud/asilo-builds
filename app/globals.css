@@ -22,8 +22,9 @@
   --color-ember: #8a2a18;
   --color-bone: #c8d4b8;
 
-  --font-display: var(--font-cinzel), "Cinzel", "Times New Roman", serif;
-  --font-body: var(--font-outfit), "Outfit", system-ui, sans-serif;
+  --font-display: var(--font-cinzel), "Cinzel Decorative", "Times New Roman", serif;
+  --font-nav: var(--font-alegreya), "Alegreya Sans", sans-serif;
+  --font-body: var(--font-alegreya), "Alegreya Sans", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
@@ -121,6 +122,47 @@
 @keyframes asilo-drift {
   from { transform: translate3d(0, 0, 0); }
   to { transform: translate3d(4%, 6%, 0); }
+}
+
+/* Botões no recorte do site oficial D4 (chrome, sem as fontes proprietárias) */
+.btn-d4 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 28px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f4ead0;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#16110c, #16110c) padding-box,
+    linear-gradient(180deg, #d4b56a, #6b4a1a) border-box;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 220, 150, 0.22);
+  filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.45));
+}
+.btn-d4:hover {
+  color: #fff;
+  filter: brightness(1.12) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.45));
+}
+.btn-d4-fill {
+  color: #fff;
+  background: #a50905;
+  border: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.btn-d4-fill:hover {
+  background: #dd0707;
+  color: #fff;
+  filter: none;
+}
+.btn-d4-ghost {
+  background:
+    linear-gradient(#0c0c0c, #0c0c0c) padding-box,
+    linear-gradient(180deg, #8a7350, #3a2e1c) border-box;
 }
 
 @media (prefers-reduced-motion: reduce) {

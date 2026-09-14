@@ -36,18 +36,18 @@ export default function Header() {
               e.currentTarget.style.display = 'none'
             }}
           />
-          <span className="font-display text-3xl md:text-4xl tracking-[0.18em] text-white">ASILO</span>
+          <span className="font-display text-3xl md:text-4xl tracking-[0.12em] text-white">ASILO</span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-3 xl:gap-6">
+        <nav className="hidden lg:flex items-center gap-3 xl:gap-5">
           {NAV.map((link) => {
             const active = path === link.href || (link.href !== '/' && path.startsWith(link.href))
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-display text-[15px] xl:text-[17px] tracking-[0.06em] ${
-                  active ? 'text-green-bright' : 'text-bone/80 hover:text-white'
+                className={`font-nav text-[15px] xl:text-[16px] font-medium ${
+                  active ? 'text-white' : 'text-bone/75 hover:text-white'
                 }`}
               >
                 {link.label}
@@ -57,10 +57,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="/cla"
-            className="hidden sm:inline-flex px-5 py-2.5 font-display text-sm tracking-[0.12em] border border-green-primary/50 text-green-bright hover:bg-green-primary hover:text-white"
-          >
+          <Link href="/cla" className="btn-d4 btn-d4-fill hidden sm:inline-flex min-h-11 px-5 text-[12px]">
             Jogar com a gente
           </Link>
           <button
@@ -77,11 +74,11 @@ export default function Header() {
       {open && (
         <div className="lg:hidden border-t border-green-border/40 bg-[#050605] px-5 py-6 flex flex-col gap-4">
           {NAV.map((link) => (
-            <Link key={link.href} href={link.href} className="font-display text-xl text-bone">
+            <Link key={link.href} href={link.href} className="font-nav text-xl text-bone">
               {link.label}
             </Link>
           ))}
-          <a href={DISCORD_INVITE} target="_blank" rel="noreferrer" className="text-green-bright font-display text-lg tracking-[0.18em] uppercase">
+          <a href={DISCORD_INVITE} target="_blank" rel="noreferrer" className="text-green-bright font-nav text-lg">
             Discord
           </a>
         </div>

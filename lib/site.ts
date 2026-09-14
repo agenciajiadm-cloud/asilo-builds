@@ -11,6 +11,7 @@ export const NAV = [
   { label: 'Montador', href: '/planner' },
   { label: 'Rank', href: '/rank' },
   { label: 'Clã', href: '/cla' },
+  { label: 'Criadores', href: '/criadores' },
 ] as const
 
 export const PATCH_NOTES = [
