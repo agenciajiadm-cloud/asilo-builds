@@ -27,9 +27,17 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 h-[5.25rem] flex items-center gap-8">
-        <Link href="/" id="asilo-brand">
-          <img id="asilo-logo" src="/images/d4-1.png" alt="" width={52} height={52} />
-          <span id="asilo-wordmark">ASILO</span>
+        <Link href="/" id="asilo-brand" aria-label="ASILO" className="shrink-0">
+          <span id="asilo-logo-frame" className="block h-[72px] w-[72px] overflow-hidden rounded-full">
+            <img
+              id="asilo-logo"
+              src="/images/logo-asilo.png"
+              alt="ASILO"
+              width={72}
+              height={72}
+              className="h-full w-full object-cover"
+            />
+          </span>
         </Link>
 
         <nav className="hidden lg:flex ml-auto items-center gap-4 xl:gap-7">
