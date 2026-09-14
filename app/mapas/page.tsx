@@ -9,11 +9,10 @@ export default function MapasPage() {
     <div className="relative px-5 max-w-4xl mx-auto pt-16 pb-32">
       <Fog />
       <div className="relative">
-        <p className="font-display text-[11px] tracking-[0.35em] text-green-bright mb-5">Mapas</p>
-        <h1 className="font-display text-4xl md:text-6xl text-white mb-6">Helltide e o relógio</h1>
+        <h1 className="font-display text-4xl md:text-6xl text-white mb-6">Quando o mundo muda de cor</h1>
         <p className="text-lg leading-8 text-bone/85 mb-12">
-          Sem timer, mapa de Helltide é poster. O relógio abaixo é nosso. A zona pintada e o baú mystery não são scrape da
-          helltides.com — Cloudflare 403, e o produto é deles.
+          Helltide, chefes e legião têm hora. O relógio abaixo é um guia; o aviso na hora continua no Discord, pra ninguém
+          perder o mapa aberto.
         </p>
         <MapTimers />
       </div>

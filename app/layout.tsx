@@ -1,25 +1,25 @@
-import { Cinzel, Source_Sans_3 } from 'next/font/google'
+import { Fraunces, Outfit } from 'next/font/google'
 import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import CinematicRoot from '@/components/cinematic/CinematicRoot'
 
-const display = Cinzel({
+const display = Fraunces({
   subsets: ['latin'],
-  variable: '--font-cinzel',
-  weight: ['400', '600', '700', '900'],
-})
-
-const body = Source_Sans_3({
-  subsets: ['latin'],
-  variable: '--font-source',
+  variable: '--font-fraunces',
   weight: ['400', '600', '700'],
 })
 
+const body = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
+  weight: ['400', '500', '600', '700'],
+})
+
 export const metadata: Metadata = {
-  title: 'ASILO · Diablo 4 BR',
-  description: 'Clã ASILO — montador, lore de Santuário, rank de Pit e mapas. Lar Recreativo de Idosos.',
+  title: 'ASILO · Diablo 4',
+  description: 'História de Santuário, classes, mapas e montador de builds. Clã ASILO — Lar Recreativo de Idosos.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

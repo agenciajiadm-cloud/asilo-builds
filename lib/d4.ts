@@ -61,7 +61,28 @@ export function parseBuildUrl(raw: string) {
   const path = parsed.pathname.toLowerCase()
   const hay = `${host}${path}${parsed.search}`.toLowerCase()
 
-  const classHit = D4_CLASSES.find((c) => hay.includes(c.id) || hay.includes(c.nome.toLowerCase()))
+  const aliases: [string, (typeof D4_CLASSES)[number]['id']][] = [
+    ['spiritborn', 'spiritborn'],
+    ['necromancer', 'necromancer'],
+    ['necromante', 'necromancer'],
+    ['barbarian', 'barbarian'],
+    ['barbaro', 'barbarian'],
+    ['sorcerer', 'sorcerer'],
+    ['sorceress', 'sorcerer'],
+    ['feiticeira', 'sorcerer'],
+    ['paladin', 'paladin'],
+    ['paladino', 'paladin'],
+    ['warlock', 'warlock'],
+    ['amazon', 'amazon'],
+    ['amazona', 'amazon'],
+    ['druid', 'druid'],
+    ['druida', 'druid'],
+    ['rogue', 'rogue'],
+    ['ladina', 'rogue'],
+    ['ladino', 'rogue'],
+  ]
+  const classHit = aliases.find(([needle]) => hay.includes(needle))
+
   let source: string | null = null
   if (host.includes('d4builds')) source = 'd4builds'
   else if (host.includes('mobalytics')) source = 'mobalytics'
@@ -70,5 +91,5 @@ export function parseBuildUrl(raw: string) {
   else if (host.includes('youtube') || host.includes('youtu.be')) source = 'youtube'
   else source = host
 
-  return { href: parsed.toString(), source, classId: classHit?.id ?? null }
+  return { href: parsed.toString(), source, classId: classHit?.[1] ?? null }
 }

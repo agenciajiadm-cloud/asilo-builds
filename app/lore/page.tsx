@@ -32,13 +32,13 @@ export default function LorePage() {
   return (
     <div className="px-5 md:px-10 max-w-5xl mx-auto pb-32">
       <header className="pt-16 md:pt-28 pb-10">
-        <p className="font-display text-[11px] tracking-[0.4em] text-green-bright mb-6">Manuscrito do clã</p>
-        <h1 className="font-display text-4xl md:text-7xl text-white leading-[1.05] mb-8">
+        <p className="text-sm text-green-bright mb-6">A história</p>
+        <h1 className="font-display text-4xl md:text-7xl text-white leading-[1.08] mb-8">
           Santuário não foi feito para nós.
         </h1>
         <p className="max-w-xl text-lg leading-8 text-bone/80">
-          Foi feito para esconder um pecado. Anjo e demônio geraram uma raça no meio da Guerra Eterna.
-          O que segue não é wiki colada: é o recorte que o ASILO conta pra quem entra no Discord sem ter lido três romances.
+          Foi feito para esconder um pecado: um anjo e uma demônia geraram um mundo no meio da Guerra Eterna. Abaixo, a
+          saga era por era — texto, imagem e as cinemáticas oficiais — pra quem quer entender o chão que pisa.
         </p>
       </header>
 

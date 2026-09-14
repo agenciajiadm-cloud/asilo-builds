@@ -18,11 +18,11 @@ const D4 = [
 export default function ClassesPage() {
   return (
     <div className="px-5 max-w-4xl mx-auto pt-16 pb-32">
-      <p className="font-display text-[11px] tracking-[0.35em] text-green-bright mb-5">Guias</p>
-      <h1 className="font-display text-4xl md:text-6xl text-white mb-6">Personagem não é build.</h1>
+      <p className="text-sm text-green-bright mb-4">Classes</p>
+      <h1 className="font-display text-4xl md:text-6xl text-white mb-6">Nove jeitos de atravessar Santuário</h1>
       <p className="max-w-2xl text-lg leading-8 text-bone/85 mb-14">
-        Aqui: lore da classe, como ela respira em cada jogo, skills em sequência D1→D4. Gear e paragon 300 ficam no planner.
-        Retratos oficiais da Blizzard não. Silhueta e texto nossos, até ter arte livre.
+        Cada classe tem uma história nos jogos. Aqui você lê quem ela é. A build da season — itens, paragon, rotação —
+        fica no montador.
       </p>
       <ul className="divide-y divide-green-border/40 border-y border-green-border/40">
         {D4.map((c) => (

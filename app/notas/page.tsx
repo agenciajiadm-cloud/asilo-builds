@@ -8,7 +8,8 @@ export default function NotasPage() {
     <div className="px-5 max-w-2xl mx-auto pt-16 pb-32">
       <h1 className="font-display text-4xl md:text-5xl text-white mb-6">Patch notes</h1>
       <p className="leading-8 text-bone/85 mb-10">
-        Não copiamos o texto da Blizzard. É copyright deles e muda toda week. O ASILO aponta pro original e guarda o recorte do clã (o que muda Pit, planner, season).
+        Não copiamos o texto da Blizzard (é deles). Aqui o link oficial e, quando fizer sentido, o que mudou na season pra
+        quem joga no clã.
       </p>
       <ul className="space-y-8">
         {PATCH_NOTES.map((p) => (

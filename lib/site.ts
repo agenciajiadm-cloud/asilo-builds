@@ -8,7 +8,7 @@ export const NAV = [
   { label: 'Classes', href: '/classes' },
   { label: 'Lore', href: '/lore' },
   { label: 'Mapas', href: '/mapas' },
-  { label: 'Planner', href: '/planner' },
+  { label: 'Montador', href: '/planner' },
   { label: 'Rank', href: '/rank' },
   { label: 'Clã', href: '/cla' },
 ] as const
@@ -17,6 +17,6 @@ export const PATCH_NOTES = [
   {
     title: 'Diablo IV — notícias oficiais',
     href: 'https://news.blizzard.com/pt-br/diablo4',
-    note: 'Patch notes completos ficam no blog da Blizzard. Aqui só o recorte do clã e o link.',
+    note: 'Patch notes completos no blog da Blizzard. Por aqui, o link e o que importa pra season.',
   },
 ]

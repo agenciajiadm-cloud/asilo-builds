@@ -41,44 +41,31 @@ export default function Home() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="font-display text-[11px] tracking-[0.45em] text-green-bright mb-6"
+            className="text-sm text-green-bright mb-5"
           >
-            Season {SEASON} · {SEASON_NAME}
+            Diablo IV · Season {SEASON} · {SEASON_NAME}
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="font-display text-5xl md:text-8xl text-white leading-[0.92] max-w-4xl"
+            className="font-display text-5xl md:text-7xl text-white leading-[1.05] max-w-3xl"
           >
-            O Santuário
-            <br />
-            não perdoa
-            <br />
-            <span className="text-green-bright">os despreparados.</span>
+            Santuário ainda está aqui.
           </motion.h1>
-          <p className="mt-8 max-w-xl text-lg leading-8 text-bone/80">
-            ASILO é clã BR de Pit alto. Aqui o arsenal é verificado, a lore é manuscrito, o mapa tem relógio, e o planner
-            não finge ser o d4builds.
+          <p className="mt-8 max-w-xl text-lg leading-8 text-bone/85">
+            Trinta anos de Diablo: a história, as classes, os mapas e um montador de builds pra jogar do seu jeito.
+            O ASILO é só a casa — o jogo é o convite.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/planner"
-              className="px-8 py-4 bg-green-primary text-white font-display text-[11px] tracking-[0.22em] uppercase"
-            >
-              Montar build
+            <Link href="/lore" className="px-8 py-4 bg-green-primary text-white text-sm">
+              Começar pela história
             </Link>
-            <Link
-              href="/lore"
-              className="px-8 py-4 border border-green-primary/50 text-green-bright font-display text-[11px] tracking-[0.22em] uppercase"
-            >
-              Ler a história
+            <Link href="/planner" className="px-8 py-4 border border-green-primary/50 text-green-bright text-sm">
+              Montar uma build
             </Link>
-            <Link
-              href="/mapas"
-              className="px-8 py-4 border border-green-border text-bone font-display text-[11px] tracking-[0.22em] uppercase"
-            >
-              Mapas
+            <Link href="/mapas" className="px-8 py-4 border border-green-border text-bone text-sm">
+              Ver os mapas
             </Link>
           </div>
         </div>
@@ -87,7 +74,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-5 py-20 grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-16">
         <div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 border-b border-green-border/30 pb-8">
-            <h2 className="font-display text-3xl text-white">Arsenal · S{SEASON}</h2>
+            <h2 className="font-display text-3xl text-white">Builds da temporada</h2>
             <ClassTabs activeTab={activeTab} setActiveTab={setActiveTab} />
           </div>
           <ul className="divide-y divide-green-border/30 border-y border-green-border/30">
@@ -109,7 +96,7 @@ export default function Home() {
                 <li key={build.id || slug}>
                   <Link href={`/builds/${slug}`} className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 py-6 group">
                     <span className="font-display text-2xl text-white group-hover:text-green-bright">{name}</span>
-                    <span className="text-[12px] tracking-[0.16em] uppercase text-green-muted">
+                    <span className="text-sm text-green-muted">
                       {author} · {cls}
                       {pit ? ` · Pit ${pit}` : ''}
                     </span>
@@ -122,10 +109,12 @@ export default function Home() {
         <aside className="space-y-8">
           <RankingSidebar rankings={[]} />
           <div className="border border-green-border/40 p-8">
-            <h3 className="font-display text-xl text-white mb-3">Entrar</h3>
-            <p className="text-sm leading-7 text-bone/75 mb-6">Discord eterno. Whats no /cla. Sem bot atribuindo classe — vocês já têm tag.</p>
-            <a href={DISCORD_INVITE} target="_blank" rel="noreferrer" className="text-[11px] font-display tracking-[0.2em] uppercase text-green-bright">
-              discord.gg/zXd4y525yV
+            <h3 className="font-display text-xl text-white mb-3">Jogar junto</h3>
+            <p className="text-sm leading-7 text-bone/75 mb-6">
+              Discord e WhatsApp do clã. Chega, pergunta, monta personagem. Ninguém precisa chegar pronto.
+            </p>
+            <a href={DISCORD_INVITE} target="_blank" rel="noreferrer" className="text-green-bright text-sm">
+              Entrar no Discord
             </a>
           </div>
         </aside>

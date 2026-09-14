@@ -46,12 +46,11 @@ export default function MapTimers() {
         <Card title="Legion" kind="legion" />
       </div>
       <p className="text-sm leading-7 text-bone/70">
-        Relógio interno do site (ciclo comunitário, não Cloudflare). Se o patch da season mudar o intervalo, o Discord
-        continua certo:{' '}
+        Se o patch mudar o intervalo, o aviso ao vivo fica no Discord:{' '}
         <a className="text-green-bright underline" href={DISCORD_INVITE} target="_blank" rel="noreferrer">
-          #🔥-helltide · #👹-world-boss · #🗡️-legion
+          helltide, world boss e legion
         </a>
-        . Zona no mapa e baú mystery entram quando o clã calibrar o cron — não quando a gente copiar o helltides.com.
+        .
       </p>
     </div>
   )

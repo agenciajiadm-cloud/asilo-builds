@@ -36,7 +36,7 @@ export default function Header() {
               e.currentTarget.style.display = 'none'
             }}
           />
-          <span className="font-display text-xl tracking-[0.35em] text-white">ASILO</span>
+          <span className="font-display text-xl tracking-[0.12em] text-white">ASILO</span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-6 xl:gap-7">
@@ -46,7 +46,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-display text-[11px] tracking-[0.22em] uppercase ${
+                className={`text-[13px] ${
                   active ? 'text-green-bright' : 'text-green-muted hover:text-bone'
                 }`}
               >
@@ -59,9 +59,9 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/cla"
-            className="hidden sm:inline-flex px-5 py-2 text-[10px] tracking-[0.2em] uppercase font-display border border-green-primary/50 text-green-bright hover:bg-green-primary hover:text-white"
+            className="hidden sm:inline-flex px-5 py-2 text-sm border border-green-primary/50 text-green-bright hover:bg-green-primary hover:text-white"
           >
-            Entrar no clã
+            Jogar com a gente
           </Link>
           <button
             type="button"
@@ -77,7 +77,7 @@ export default function Header() {
       {open && (
         <div className="lg:hidden border-t border-green-border/40 bg-[#050605] px-5 py-6 flex flex-col gap-4">
           {NAV.map((link) => (
-            <Link key={link.href} href={link.href} className="font-display tracking-[0.18em] uppercase text-bone">
+            <Link key={link.href} href={link.href} className="text-bone">
               {link.label}
             </Link>
           ))}

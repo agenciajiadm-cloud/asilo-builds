@@ -4,17 +4,17 @@ import { DISCORD_INVITE, WHATSAPP } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Clã · ASILO',
-  description: 'Lar Recreativo de Idosos — Discord, WhatsApp, regras e como entrar.',
+  description: 'Lar Recreativo de Idosos — Discord, WhatsApp e como jogar junto.',
 }
 
 export default function ClaPage() {
   return (
     <div className="px-5 max-w-3xl mx-auto pt-16 pb-32">
-      <p className="font-display text-[11px] tracking-[0.35em] text-green-bright mb-5">Clã</p>
+      <p className="text-sm text-green-bright mb-4">O clã</p>
       <h1 className="font-display text-4xl md:text-6xl text-white mb-8">Lar Recreativo de Idosos</h1>
       <p className="text-lg leading-8 text-bone/85 mb-12">
-        ASILO não é lista de Discord. É gente que joga fosso alto, ensina build e não trata recruta como lixo.
-        O site é a vitrine. O servidor é a casa.
+        Um grupo de gente que gosta de Diablo. A gente monta build, conta a história do jogo, avisa Helltide e joga
+        junto. Se você está começando ou já vive no Santuário, o convite é o mesmo.
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -22,40 +22,38 @@ export default function ClaPage() {
           href={DISCORD_INVITE}
           target="_blank"
           rel="noreferrer"
-          className="text-center px-8 py-4 bg-green-primary text-white font-display tracking-[0.2em] uppercase text-[11px] hover:bg-green-bright"
+          className="text-center px-8 py-4 bg-green-primary text-white text-sm"
         >
-          Discord eterno
+          Entrar no Discord
         </a>
         <a
           href={WHATSAPP}
           target="_blank"
           rel="noreferrer"
-          className="text-center px-8 py-4 border border-green-primary/50 text-green-bright font-display tracking-[0.2em] uppercase text-[11px]"
+          className="text-center px-8 py-4 border border-green-primary/50 text-green-bright text-sm"
         >
           WhatsApp
         </a>
       </div>
 
       <section className="space-y-6 text-[16px] leading-8 text-bone/90 border-t border-green-border/40 pt-12">
-        <h2 className="font-display text-2xl text-white">Como entrar</h2>
+        <h2 className="font-display text-2xl text-white">Como chegar</h2>
         <p>
-          Convite que não expira: {DISCORD_INVITE.replace('https://', '')}. Lê <strong>📜-regras</strong>, abre{' '}
-          <strong>🎫-ticket-membro</strong>, faz a entrevista. Recruta não pede cargo de classe pro bot — vocês já têm tag.
+          Convite permanente: {DISCORD_INVITE.replace('https://', '')}. Lê as regras, abre um ticket se quiser tag de
+          membro. Sem pressa.
         </p>
-        <h2 className="font-display text-2xl text-white pt-6">O que o clã te dá</h2>
+        <h2 className="font-display text-2xl text-white pt-6">O que tem no servidor</h2>
         <ul className="list-disc pl-5 space-y-2">
-          <li>Rank de Pit do ASILO (vídeo no Discord, officer valida, sobe no site)</li>
-          <li>Salas por classe: guia ≠ build</li>
-          <li>Alertas automáticos de Helltide, World Boss, Legion (bot Helltides + feeds do Rob e do Sanctuary)</li>
-          <li>Builds do clã no site, não só print no chat</li>
+          <li>Salas por classe — guia da personagem separado da build da season</li>
+          <li>Alertas de Helltide, World Boss e Legion</li>
+          <li>Montador e builds no site, pra não ficar só no print</li>
+          <li>Corridas de Fosso pra quem quiser gravar e aparecer no rank</li>
         </ul>
-        <h2 className="font-display text-2xl text-white pt-6">Regras curtas</h2>
-        <p>
-          Respeito. Sem cheat. Trade honesto. Rank só com vídeo sem corte. Política e ódio saem da voice.
-          O texto completo está pinado no Discord.
-        </p>
+        <h2 className="font-display text-2xl text-white pt-6">O combinado</h2>
+        <p>Respeito, jogo limpo, trade honesto. O resto está pinado no Discord.</p>
         <p className="pt-4">
-          Candidatura formal também existe em <Link href="/recrutamento" className="text-green-bright underline">/recrutamento</Link>.
+          Formulário extra em <Link href="/recrutamento" className="text-green-bright underline">/recrutamento</Link>, se
+          preferir escrever antes de entrar na call.
         </p>
       </section>
     </div>

@@ -22,7 +22,7 @@ export default function RankingSidebar({ rankings = [] }: { rankings?: RankingIt
   return (
     <div className="border border-green-border/40 p-8">
       <div className="flex items-baseline justify-between mb-6">
-        <h2 className="font-display text-xl text-white">Pit do clã</h2>
+        <h2 className="font-display text-xl text-white">Fosso da semana</h2>
         <Link href="/rank" className="text-[10px] tracking-[0.16em] uppercase text-orange-primary">
           Rank
         </Link>
@@ -39,7 +39,7 @@ export default function RankingSidebar({ rankings = [] }: { rankings?: RankingIt
         ))}
       </ol>
       <p className="mt-6 text-xs leading-6 text-green-muted">
-        Lista de vitrine até o #📥-pit-submit ligar no banco.{' '}
+        Lista de quem mandou vídeo.{' '}
         <a href={DISCORD_INVITE} className="text-green-bright" target="_blank" rel="noreferrer">
           Submeter
         </a>

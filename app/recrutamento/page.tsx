@@ -14,7 +14,7 @@ export default function RecruitmentPage() {
       <div className="max-w-xl mx-auto px-5 pt-24 pb-32">
         <h1 className="font-display text-4xl text-white mb-4">Candidatura anotada</h1>
         <p className="leading-8 text-bone/80 mb-8">
-          O filtro de verdade é o Discord: regras, ticket, entrevista. Este form não substitui o servidor.
+          O próximo passo é o Discord: regras, um olá, e o resto a gente resolve jogando.
         </p>
         <Link href="/cla" className="text-green-bright font-display tracking-[0.16em] uppercase text-[11px]">
           Ir ao clã
@@ -28,10 +28,10 @@ export default function RecruitmentPage() {
       <Fog />
       <div className="relative">
         <p className="font-display text-[11px] tracking-[0.3em] text-green-bright mb-4">Recrutamento</p>
-        <h1 className="font-display text-4xl md:text-5xl text-white mb-6">Quer entrar. Prove no servidor.</h1>
+        <h1 className="font-display text-4xl md:text-5xl text-white mb-6">Quer jogar com a gente?</h1>
         <p className="leading-8 text-bone/85 mb-8">
-          Pit alto ajuda. Não é o único critério. Abre o Discord eterno, lê as regras, abre ticket. O formulário abaixo é
-          recorte — officers olham o perfil lá.
+          Entra no Discord, lê as regras, se apresenta. O formulário abaixo é opcional — só pra quem prefere escrever
+          antes.
         </p>
         <a href={DISCORD_INVITE} className="inline-block mb-12 text-[11px] tracking-[0.2em] uppercase font-display text-green-bright">
           {DISCORD_INVITE.replace('https://', '')}
