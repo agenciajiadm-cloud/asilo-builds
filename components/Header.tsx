@@ -22,21 +22,21 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 overflow-visible transition-colors duration-300 ${
         scrolled || open ? 'bg-[#050605]/95 border-b border-green-border/60' : 'bg-transparent border-b border-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 h-24 flex items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3 min-w-0">
+      <div className="max-w-7xl mx-auto px-5 h-24 flex items-center justify-between gap-4 overflow-visible">
+        <Link href="/" className="relative flex items-center gap-3 min-w-0 z-20">
           <img
             src="/images/logo.png"
-            alt=""
-            className="w-14 h-14 rounded-full border border-green-primary/40 object-cover"
+            alt="ASILO"
+            className="relative -my-10 w-28 h-28 md:w-36 md:h-36 rounded-full border border-green-primary/50 object-cover shadow-[0_12px_40px_rgba(0,0,0,0.65)]"
             onError={(e) => {
               e.currentTarget.style.display = 'none'
             }}
           />
-          <span className="font-display text-3xl md:text-4xl tracking-[0.12em] text-white">ASILO</span>
+          <span className="font-display font-bold text-4xl md:text-5xl tracking-[0.1em] text-white">ASILO</span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-3 xl:gap-5">
@@ -46,8 +46,8 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-nav text-[15px] xl:text-[16px] font-medium ${
-                  active ? 'text-white' : 'text-bone/75 hover:text-white'
+                className={`font-nav text-[17px] xl:text-[18px] font-bold ${
+                  active ? 'text-white' : 'text-bone/80 hover:text-white'
                 }`}
               >
                 {link.label}
@@ -74,7 +74,7 @@ export default function Header() {
       {open && (
         <div className="lg:hidden border-t border-green-border/40 bg-[#050605] px-5 py-6 flex flex-col gap-4">
           {NAV.map((link) => (
-            <Link key={link.href} href={link.href} className="font-nav text-xl text-bone">
+            <Link key={link.href} href={link.href} className="font-nav text-xl font-bold text-bone">
               {link.label}
             </Link>
           ))}

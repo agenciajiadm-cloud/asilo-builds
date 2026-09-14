@@ -3,7 +3,6 @@
 import { D4_CLASSES } from '@/lib/d4'
 import { TIER_ORDER, TIER_TONE, type ListKind, type TierBuild } from '@/lib/tier'
 import SkillIcon from '@/components/tier/SkillIcon'
-import { SEASON, SEASON_NAME } from '@/lib/site'
 
 const CLASS_ICON: Record<string, string> = Object.fromEntries(D4_CLASSES.map((c) => [c.id, c.icon]))
 
@@ -22,9 +21,6 @@ export default function TierBoard({
     <section>
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <div>
-          <p className="text-[12px] tracking-[0.2em] uppercase text-green-bright mb-3">
-            Season {SEASON} · {SEASON_NAME}
-          </p>
           <h2 className="font-display text-4xl md:text-6xl text-white leading-none">Tier list</h2>
           <p className="mt-4 max-w-lg text-sm leading-7 text-bone/70">
             O que o clã está jogando agora. Clica no ícone e abre o guia — Maxroll, d4builds, vídeo, o que for.

@@ -1,38 +1,67 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { D4_CLASSES } from '@/lib/d4'
+import { CLASS_PORTRAIT } from '@/lib/portraits'
 
 export const metadata: Metadata = { title: 'Classes · ASILO' }
 
-const D4 = [
-  { slug: 'spiritborn', nome: 'Spiritborn', jogos: 'D4' },
-  { slug: 'barbaro', nome: 'Bárbaro', jogos: 'D1 · D2 · D3 · D4' },
-  { slug: 'ladina', nome: 'Ladina / Rogue', jogos: 'D3 · D4' },
-  { slug: 'feiticeira', nome: 'Feiticeira', jogos: 'D2 · D3 · D4' },
-  { slug: 'druida', nome: 'Druida', jogos: 'D2 · D4' },
-  { slug: 'necromante', nome: 'Necromante', jogos: 'D2 · D3 · D4' },
-  { slug: 'paladino', nome: 'Paladino', jogos: 'D2 · D4' },
-  { slug: 'warlock', nome: 'Warlock', jogos: 'D4' },
-  { slug: 'amazona', nome: 'Amazona', jogos: 'D2 · D4 em 2027' },
-]
+const ERA: Record<string, string> = {
+  spiritborn: 'D4',
+  barbarian: 'D1 · D2 · D3 · D4',
+  rogue: 'D3 · D4',
+  sorcerer: 'D2 · D3 · D4',
+  druid: 'D2 · D4',
+  necromancer: 'D2 · D3 · D4',
+  paladin: 'D2 · D4',
+  warlock: 'D4',
+  amazon: 'D2 · D4 em 2027',
+}
+
+const SLUG: Record<string, string> = {
+  spiritborn: 'spiritborn',
+  barbarian: 'barbaro',
+  rogue: 'ladina',
+  sorcerer: 'feiticeira',
+  druid: 'druida',
+  necromancer: 'necromante',
+  paladin: 'paladino',
+  warlock: 'warlock',
+  amazon: 'amazona',
+}
 
 export default function ClassesPage() {
   return (
-    <div className="px-5 max-w-4xl mx-auto pt-16 pb-32">
+    <div className="px-5 max-w-6xl mx-auto pt-16 pb-32">
       <p className="text-sm text-green-bright mb-4">Classes</p>
       <h1 className="font-display text-4xl md:text-6xl text-white mb-6">Nove jeitos de atravessar Santuário</h1>
       <p className="max-w-2xl text-lg leading-8 text-bone/85 mb-14">
-        Cada classe tem uma história nos jogos. Aqui você lê quem ela é. A build da season — itens, paragon, rotação —
-        fica no montador.
+        Retrato, skills do kit e a história. A build da season fica no montador.
       </p>
       <ul className="divide-y divide-green-border/40 border-y border-green-border/40">
-        {D4.map((c) => (
-          <li key={c.slug}>
-            <Link href={`/classes/${c.slug}`} className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 py-6 hover:text-green-bright">
-              <span className="font-display text-2xl text-white">{c.nome}</span>
-              <span className="text-[12px] tracking-[0.2em] uppercase text-green-muted">{c.jogos}</span>
-            </Link>
-          </li>
-        ))}
+        {D4_CLASSES.map((c) => {
+          const photo = CLASS_PORTRAIT[c.id]
+          return (
+            <li key={c.id}>
+              <Link
+                href={`/classes/${SLUG[c.id]}`}
+                className="flex items-stretch gap-6 py-6 hover:bg-white/[0.02]"
+              >
+                <div className="relative w-28 h-36 md:w-40 md:h-52 shrink-0 overflow-hidden border border-green-border/40 bg-[#080a08]">
+                  {photo ? (
+                    <img src={photo} alt="" className="w-full h-full object-cover object-top" />
+                  ) : (
+                    <img src={c.icon} alt="" className="w-16 h-16 m-auto mt-10 opacity-70" />
+                  )}
+                </div>
+                <div className="flex flex-col justify-center min-w-0">
+                  <span className="font-display text-2xl md:text-3xl text-white">{c.nome}</span>
+                  <span className="mt-2 text-[12px] tracking-[0.16em] uppercase text-green-muted">{ERA[c.id]}</span>
+                  {!c.playable && <span className="mt-3 text-sm text-bone/60">Ainda não jogável.</span>}
+                </div>
+              </Link>
+            </li>
+          )
+        })}
       </ul>
     </div>
   )
