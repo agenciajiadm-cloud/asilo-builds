@@ -30,12 +30,12 @@ export default function BaalTilt() {
   }, [])
 
   return (
-    <div ref={wrap} className="relative h-[64vh] md:h-[86vh] -mr-10 md:-mr-24 scale-[1.12] origin-right" style={{ perspective: '1000px' }}>
+    <div ref={wrap} className="relative h-[46vh] lg:h-[86vh] mx-auto lg:-mr-24 lg:scale-[1.12] lg:origin-right origin-center" style={{ perspective: '1000px' }}>
       <img
         ref={img}
         src="/images/baal.png"
         alt="Baal"
-        className="absolute inset-0 w-full h-full object-contain object-right drop-shadow-[0_40px_80px_rgba(0,0,0,0.45)] will-change-transform"
+        className="absolute inset-0 w-full h-full object-contain object-center lg:object-right drop-shadow-[0_40px_80px_rgba(0,0,0,0.45)] will-change-transform"
         style={{ transformOrigin: '55% 42%', transition: 'transform 0.16s ease-out' }}
       />
     </div>

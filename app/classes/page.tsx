@@ -44,7 +44,7 @@ export default function ClassesPage() {
             <li key={c.id}>
               <Link
                 href={`/classes/${SLUG[c.id]}`}
-                className="flex items-stretch gap-6 py-6 asilo-row"
+                className="flex flex-col lg:flex-row items-center lg:items-stretch gap-4 lg:gap-6 py-6 asilo-row text-center lg:text-left"
               >
                 <div className="relative w-28 h-36 md:w-40 md:h-52 shrink-0 overflow-hidden border border-green-border/40 bg-[#080a08]">
                   {photo ? (

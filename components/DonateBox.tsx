@@ -30,13 +30,13 @@ export default function DonateBox() {
 
   return (
     <section id="doar" className="border-t border-green-border/40">
-      <div className="max-w-7xl mx-auto px-5 py-8 md:py-10">
+      <div className="max-w-7xl mx-auto px-5 py-8 md:py-10 flex flex-col items-center lg:items-start">
         <p className="font-nav text-sm text-[#c88a1a] mb-2">Apoio</p>
         <h2 className="font-display text-2xl md:text-3xl text-white mb-3">Doar pro projeto</h2>
         <p className="max-w-xl text-sm leading-7 text-bone/70 mb-6">
           Qualquer valor — R$ 1 ou R$ 100. Vai pra melhorar o site, pagar ferramenta e manter o ASILO no ar. Não é clã fee.
         </p>
-        <form onSubmit={go} className="flex flex-wrap items-end gap-3">
+        <form onSubmit={go} className="flex flex-wrap items-end justify-center lg:justify-start gap-3">
           <div>
             <label className="block text-[11px] text-green-muted mb-1">Valor (R$)</label>
             <input

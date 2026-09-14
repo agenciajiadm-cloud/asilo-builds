@@ -11,7 +11,7 @@ function Era({ kicker, title, children }: { kicker: string; title: string; child
     <section className="relative py-20 md:py-28 border-t border-ember/30">
       <p className="font-display text-[11px] tracking-[0.35em] text-ember mb-4">{kicker}</p>
       <h2 className="font-display text-3xl md:text-5xl text-white mb-10 max-w-3xl">{title}</h2>
-      <div className="max-w-2xl space-y-6 text-[17px] leading-8 text-bone/90">{children}</div>
+      <div className="max-w-2xl mx-auto lg:mx-0 space-y-6 text-[17px] leading-8 text-bone/90">{children}</div>
     </section>
   )
 }
@@ -36,7 +36,7 @@ export default function LorePage() {
         <h1 className="font-display text-4xl md:text-7xl text-white leading-[1.08] mb-8">
           Santuário não foi feito para nós.
         </h1>
-        <p className="max-w-xl text-lg leading-8 text-bone/80">
+        <p className="max-w-xl mx-auto lg:mx-0 text-lg leading-8 text-bone/80">
           Foi feito para esconder um pecado: um anjo e uma demônia geraram um mundo no meio da Guerra Eterna. Abaixo, a
           saga era por era — texto, imagem e as cinemáticas oficiais — pra quem quer entender o chão que pisa.
         </p>

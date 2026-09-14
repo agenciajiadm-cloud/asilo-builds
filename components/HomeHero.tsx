@@ -5,10 +5,10 @@ import { SEASON, SEASON_NAME } from '@/lib/site'
 
 export default function HomeHero() {
   return (
-    <section className="relative overflow-hidden border-b border-green-border/40 min-h-[68vh] md:min-h-[78vh] flex items-center -mt-[5.1rem] pt-[5.5rem]">
+    <section className="relative overflow-hidden border-b border-green-border/40 min-h-[62vh] md:min-h-[78vh] flex items-center">
       <Fog />
-      <div className="relative max-w-7xl mx-auto px-5 w-full py-4 md:py-6 grid md:grid-cols-[0.92fr_1.2fr] gap-2 items-center">
-        <div className="relative z-10">
+      <div className="relative max-w-7xl mx-auto px-5 w-full py-4 md:py-6 grid lg:grid-cols-[0.92fr_1.2fr] gap-6 lg:gap-2 items-center">
+        <div className="relative z-10 flex flex-col items-center lg:items-start text-center lg:text-left">
           <p className="font-nav text-green-bright tracking-[0.18em] text-sm mb-4 uppercase">
             Diablo IV · Season {SEASON} · {SEASON_NAME}
           </p>
@@ -19,7 +19,7 @@ export default function HomeHero() {
           <p className="mt-5 max-w-md text-base md:text-lg leading-7 text-bone/80">
             Item, Pit, Torre, o clã no Discord. A gente monta o arsenal pra você não farmar no escuro.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
             <Link href="/rank" className="btn-d4">
               Rank do clã
             </Link>
