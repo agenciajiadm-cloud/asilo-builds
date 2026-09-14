@@ -1,0 +1,1182 @@
+{
+  "barbarian": [
+    {
+      "id": "Barbarian_Whirlwind",
+      "name": "Whirlwind",
+      "slug": "whirlwind",
+      "icon": "/icons/skills/whirlwind.png"
+    },
+    {
+      "id": "Barbarian_CalloftheAncients",
+      "name": "Call of the Ancients",
+      "slug": "call_of_the_ancients",
+      "icon": "/icons/skills/call_of_the_ancients.png"
+    },
+    {
+      "id": "Barbarian_IronMaelstrom",
+      "name": "Iron Maelstrom",
+      "slug": "iron_maelstrom",
+      "icon": "/icons/skills/iron_maelstrom.png"
+    },
+    {
+      "id": "Barbarian_WrathoftheBerserker",
+      "name": "Wrath of the Berserker",
+      "slug": "wrath_of_the_berserker",
+      "icon": "/icons/skills/wrath_of_the_berserker.png"
+    },
+    {
+      "id": "Barbarian_Charge",
+      "name": "Charge",
+      "slug": "charge",
+      "icon": "/icons/skills/charge.png"
+    },
+    {
+      "id": "Barbarian_Leap",
+      "name": "Leap",
+      "slug": "leap",
+      "icon": "/icons/skills/leap.png"
+    },
+    {
+      "id": "Barbarian_WarCry",
+      "name": "War Cry",
+      "slug": "war_cry",
+      "icon": "/icons/skills/war_cry.png"
+    },
+    {
+      "id": "Barbarian_GroundStomp",
+      "name": "Ground Stomp",
+      "slug": "ground_stomp",
+      "icon": "/icons/skills/ground_stomp.png"
+    },
+    {
+      "id": "Barbarian_DeathBlow",
+      "name": "Death Blow",
+      "slug": "death_blow",
+      "icon": "/icons/skills/death_blow.png"
+    },
+    {
+      "id": "Barbarian_Rupture",
+      "name": "Rupture",
+      "slug": "rupture",
+      "icon": "/icons/skills/rupture.png"
+    },
+    {
+      "id": "Barbarian_Rend",
+      "name": "Rend",
+      "slug": "rend",
+      "icon": "/icons/skills/rend.png"
+    },
+    {
+      "id": "Barbarian_SteelGrasp",
+      "name": "Steel Grasp",
+      "slug": "steel_grasp",
+      "icon": "/icons/skills/steel_grasp.png"
+    },
+    {
+      "id": "Barbarian_Kick",
+      "name": "Kick",
+      "slug": "kick",
+      "icon": "/icons/skills/kick.png"
+    },
+    {
+      "id": "Barbarian_Maim",
+      "name": "Maim",
+      "slug": "maim",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Barbarian_ChallengingShout",
+      "name": "Challenging Shout",
+      "slug": "challenging_shout",
+      "icon": "/icons/skills/challenging_shout.png"
+    },
+    {
+      "id": "Barbarian_Frenzy",
+      "name": "Frenzy",
+      "slug": "frenzy",
+      "icon": "/icons/skills/frenzy.png"
+    },
+    {
+      "id": "Barbarian_RallyingCry",
+      "name": "Rallying Cry",
+      "slug": "rallying_cry",
+      "icon": "/icons/skills/rallying_cry.png"
+    },
+    {
+      "id": "Barbarian_IronSkin",
+      "name": "Iron Skin",
+      "slug": "iron_skin",
+      "icon": "/icons/skills/iron_skin.png"
+    },
+    {
+      "id": "Barbarian_Upheaval",
+      "name": "Upheaval",
+      "slug": "upheaval",
+      "icon": "/icons/skills/upheaval.png"
+    },
+    {
+      "id": "Barbarian_LungingStrike",
+      "name": "Lunging Strike",
+      "slug": "lunging_strike",
+      "icon": "/icons/skills/lunging_strike.png"
+    },
+    {
+      "id": "Barbarian_HammeroftheAncients",
+      "name": "Hammer of the Ancients",
+      "slug": "hotas",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Barbarian_Bash",
+      "name": "Bash",
+      "slug": "bash",
+      "icon": "/icons/skills/bash.png"
+    },
+    {
+      "id": "Barbarian_DoubleSwing",
+      "name": "Double Swing",
+      "slug": "double_swing",
+      "icon": "/icons/skills/double_swing.png"
+    },
+    {
+      "id": "X1_Barbarian_WeaponThrow",
+      "name": "Barbarian Weapon Throw",
+      "slug": "barbarian_weapon_throw",
+      "icon": "/icons/skills/fallback.svg"
+    }
+  ],
+  "druid": [
+    {
+      "id": "Druid_DebilitatingRoar",
+      "name": "Debilitating Roar",
+      "slug": "debilitating_roar",
+      "icon": "/icons/skills/debilitating_roar.png"
+    },
+    {
+      "id": "Druid_VineCreeper",
+      "name": "Vine Creeper",
+      "slug": "vine_creeper",
+      "icon": "/icons/skills/vine_creeper.png"
+    },
+    {
+      "id": "Druid_WindShear",
+      "name": "Wind Shear",
+      "slug": "wind_shear",
+      "icon": "/icons/skills/wind_shear.png"
+    },
+    {
+      "id": "Druid_LightningStorm",
+      "name": "Lightning Storm",
+      "slug": "lightning_storm",
+      "icon": "/icons/skills/lightning_storm.png"
+    },
+    {
+      "id": "Druid_Lacerate",
+      "name": "Lacerate",
+      "slug": "lacerate",
+      "icon": "/icons/skills/lacerate.png"
+    },
+    {
+      "id": "Druid_GrizzlyRage",
+      "name": "Grizzly Rage",
+      "slug": "grizzly_rage",
+      "icon": "/icons/skills/grizzly_rage.png"
+    },
+    {
+      "id": "Druid_Cataclysm",
+      "name": "Cataclysm",
+      "slug": "cataclysm",
+      "icon": "/icons/skills/cataclysm.png"
+    },
+    {
+      "id": "Druid_Petrify",
+      "name": "Petrify",
+      "slug": "petrify",
+      "icon": "/icons/skills/petrify.png"
+    },
+    {
+      "id": "Druid_Rabies",
+      "name": "Rabies",
+      "slug": "rabies",
+      "icon": "/icons/skills/rabies.png"
+    },
+    {
+      "id": "Druid_Trample",
+      "name": "Trample",
+      "slug": "trample",
+      "icon": "/icons/skills/trample.png"
+    },
+    {
+      "id": "Druid_WolfPack",
+      "name": "Wolf Pack",
+      "slug": "wolf_pack",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Druid_CycloneArmor",
+      "name": "Cyclone Armor",
+      "slug": "cyclone_armor",
+      "icon": "/icons/skills/cyclone_armor.png"
+    },
+    {
+      "id": "Druid_Ravens",
+      "name": "Ravens",
+      "slug": "ravens",
+      "icon": "/icons/skills/ravens.png"
+    },
+    {
+      "id": "Druid_Shred_NEW",
+      "name": "Shred N E W",
+      "slug": "shred_n_e_w",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Druid_Hurricane",
+      "name": "Hurricane",
+      "slug": "hurricane",
+      "icon": "/icons/skills/hurricane.png"
+    },
+    {
+      "id": "Druid_Boulder",
+      "name": "Boulder",
+      "slug": "boulder",
+      "icon": "/icons/skills/boulder.png"
+    },
+    {
+      "id": "Druid_Maul",
+      "name": "Maul",
+      "slug": "maul",
+      "icon": "/icons/skills/maul.png"
+    },
+    {
+      "id": "Druid_StormStrike",
+      "name": "Storm Strike",
+      "slug": "storm_strike",
+      "icon": "/icons/skills/storm_strike.png"
+    },
+    {
+      "id": "Druid_EarthenBulwark",
+      "name": "Earthen Bulwark",
+      "slug": "earthen_bulwark",
+      "icon": "/icons/skills/earthen_bulwark.png"
+    },
+    {
+      "id": "Druid_BloodHowl",
+      "name": "Blood Howl",
+      "slug": "blood_howl",
+      "icon": "/icons/skills/blood_howl.png"
+    },
+    {
+      "id": "Druid_landslide",
+      "name": "landslide",
+      "slug": "landslide",
+      "icon": "/icons/skills/landslide.png"
+    },
+    {
+      "id": "Druid_Claw",
+      "name": "Claw",
+      "slug": "claw",
+      "icon": "/icons/skills/claw.png"
+    },
+    {
+      "id": "Druid_Pulverize",
+      "name": "Pulverize",
+      "slug": "pulverize",
+      "icon": "/icons/skills/pulverize.png"
+    },
+    {
+      "id": "Druid_Earthspike_Instant",
+      "name": "Earthspike Instant",
+      "slug": "earthspike_instant",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Druid_Tornado",
+      "name": "Tornado",
+      "slug": "tornado",
+      "icon": "/icons/skills/tornado.png"
+    },
+    {
+      "id": "Druid_StoneBurst",
+      "name": "Stone Burst",
+      "slug": "stone_burst",
+      "icon": "/icons/skills/stone_burst.png"
+    }
+  ],
+  "necromancer": [
+    {
+      "id": "Necromancer_BoneSpear",
+      "name": "Bone Spear",
+      "slug": "bone_spear",
+      "icon": "/icons/skills/bone_spear.png"
+    },
+    {
+      "id": "Necromancer_BoneSplinters",
+      "name": "Bone Splinters",
+      "slug": "bone_splinters",
+      "icon": "/icons/skills/bone_splinters.png"
+    },
+    {
+      "id": "Necromancer_Reap",
+      "name": "Reap",
+      "slug": "reap",
+      "icon": "/icons/skills/reap.png"
+    },
+    {
+      "id": "Necromancer_BloodMist",
+      "name": "Blood Mist",
+      "slug": "blood_mist",
+      "icon": "/icons/skills/blood_mist.png"
+    },
+    {
+      "id": "Necromancer_Blight",
+      "name": "Blight",
+      "slug": "blight",
+      "icon": "/icons/skills/blight.png"
+    },
+    {
+      "id": "Necromancer_Decompose",
+      "name": "Decompose",
+      "slug": "decompose",
+      "icon": "/icons/skills/decompose.png"
+    },
+    {
+      "id": "Necromancer_Sever",
+      "name": "Sever",
+      "slug": "sever",
+      "icon": "/icons/skills/sever.png"
+    },
+    {
+      "id": "Necromancer_CorpseExplosion",
+      "name": "Corpse Explosion",
+      "slug": "corpse_explosion",
+      "icon": "/icons/skills/corpse_explosion.png"
+    },
+    {
+      "id": "Necromancer_BoneSpirit",
+      "name": "Bone Spirit",
+      "slug": "bone_spirit",
+      "icon": "/icons/skills/bone_spirit.png"
+    },
+    {
+      "id": "Necromancer_BloodSurge",
+      "name": "Blood Surge",
+      "slug": "blood_surge",
+      "icon": "/icons/skills/blood_surge.png"
+    },
+    {
+      "id": "Necromancer_Hemorrhage",
+      "name": "Hemorrhage",
+      "slug": "hemorrhage",
+      "icon": "/icons/skills/hemorrhage.png"
+    },
+    {
+      "id": "Necromancer_IronMaiden",
+      "name": "Iron Maiden",
+      "slug": "iron_maiden",
+      "icon": "/icons/skills/iron_maiden.png"
+    },
+    {
+      "id": "Necromancer_CorpseTendrils",
+      "name": "Corpse Tendrils",
+      "slug": "corpse_tendrils",
+      "icon": "/icons/skills/corpse_tendrils.png"
+    },
+    {
+      "id": "Necromancer_ArmyoftheDead",
+      "name": "Armyofthe Dead",
+      "slug": "armyofthe_dead",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Necromancer_BoneStorm",
+      "name": "Bone Storm",
+      "slug": "bone_storm",
+      "icon": "/icons/skills/bone_storm.png"
+    },
+    {
+      "id": "Necromancer_BloodWave",
+      "name": "Blood Wave",
+      "slug": "blood_wave",
+      "icon": "/icons/skills/blood_wave.png"
+    },
+    {
+      "id": "Necromancer_BloodLance",
+      "name": "Blood Lance",
+      "slug": "blood_lance",
+      "icon": "/icons/skills/blood_lance.png"
+    },
+    {
+      "id": "Necromancer_Decrepify",
+      "name": "Decrepify",
+      "slug": "decrepify",
+      "icon": "/icons/skills/decrepify.png"
+    },
+    {
+      "id": "X1_Necromancer_Ultimate4",
+      "name": "Necromancer Ultimate4",
+      "slug": "necromancer_ultimate4",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Necromancer_BonePrison",
+      "name": "Bone Prison",
+      "slug": "bone_prison",
+      "icon": "/icons/skills/bone_prison.png"
+    },
+    {
+      "id": "Necromancer_SkeletonMage",
+      "name": "Skeleton Mage",
+      "slug": "skeleton_mage",
+      "icon": "/icons/skills/skeleton_mage.png"
+    },
+    {
+      "id": "Necromancer_SkeletonWarrior",
+      "name": "Skeleton Warrior",
+      "slug": "skeleton_warrior",
+      "icon": "/icons/skills/skeleton_warrior.png"
+    },
+    {
+      "id": "Necromancer_Golem",
+      "name": "Golem",
+      "slug": "golem",
+      "icon": "/icons/skills/golem.png"
+    }
+  ],
+  "paladin": [
+    {
+      "id": "Paladin_LanceDive_OLD",
+      "name": "Lance Dive O L D",
+      "slug": "lance_dive_o_l_d",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Defensive_Aura",
+      "name": "Defensive Aura",
+      "slug": "defensive_aura",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_BlessedHammer",
+      "name": "Blessed Hammer",
+      "slug": "blessed_hammer",
+      "icon": "/icons/skills/blessed_hammer.png"
+    },
+    {
+      "id": "Paladin_ShieldCharge_Channel_Short",
+      "name": "Shield Charge Channel Short",
+      "slug": "shield_charge_channel_short",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_PreTrailZeal",
+      "name": "Pre Trail Zeal",
+      "slug": "pre_trail_zeal",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_HolyShock_Aura",
+      "name": "Holy Shock Aura",
+      "slug": "holy_shock_aura",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Punish",
+      "name": "Punish",
+      "slug": "punish",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_BlessedShield",
+      "name": "Blessed Shield",
+      "slug": "blessed_shield",
+      "icon": "/icons/skills/blessed_shield.png"
+    },
+    {
+      "id": "Paladin_Sacrifice",
+      "name": "Sacrifice",
+      "slug": "sacrifice",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Offensive_Aura",
+      "name": "Offensive Aura",
+      "slug": "offensive_aura",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_ShieldBash",
+      "name": "Shield Bash",
+      "slug": "shield_bash",
+      "icon": "/icons/skills/shield_bash.png"
+    },
+    {
+      "id": "Paladin_StormBolt",
+      "name": "Storm Bolt",
+      "slug": "storm_bolt",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Impale",
+      "name": "Impale",
+      "slug": "impale",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Smite_FalconPunch_Recast_1",
+      "name": "Smite Falcon Punch Recast 1",
+      "slug": "smite_falcon_punch_recast_1",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Brandish",
+      "name": "Brandish",
+      "slug": "brandish",
+      "icon": "/icons/skills/brandish.png"
+    },
+    {
+      "id": "Paladin_Advance_lunge",
+      "name": "Advance lunge",
+      "slug": "advance_lunge",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Consecration",
+      "name": "Consecration",
+      "slug": "consecration",
+      "icon": "/icons/skills/consecration.png"
+    },
+    {
+      "id": "Paladin_HeavensFury",
+      "name": "Heavens Fury",
+      "slug": "heavens_fury",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Trinity",
+      "name": "Trinity",
+      "slug": "trinity",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Fortress",
+      "name": "Fortress",
+      "slug": "fortress",
+      "icon": "/icons/skills/fortress.png"
+    },
+    {
+      "id": "Paladin_Disciple_of_Justice",
+      "name": "Disciple of Justice",
+      "slug": "disciple_of_justice",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Paladin_Condemn",
+      "name": "Condemn",
+      "slug": "condemn",
+      "icon": "/icons/skills/condemn.png"
+    },
+    {
+      "id": "Paladin_SpearOfTheHeavens",
+      "name": "Spear Of The Heavens",
+      "slug": "spear_of_the_heavens",
+      "icon": "/icons/skills/spear_of_the_heavens.png"
+    },
+    {
+      "id": "Paladin_Purify",
+      "name": "Purify",
+      "slug": "purify",
+      "icon": "/icons/skills/purify.png"
+    }
+  ],
+  "rogue": [
+    {
+      "id": "Rogue_Flurry",
+      "name": "Flurry",
+      "slug": "flurry",
+      "icon": "/icons/skills/flurry.png"
+    },
+    {
+      "id": "Rogue_Heartseeker",
+      "name": "Heartseeker",
+      "slug": "heartseeker",
+      "icon": "/icons/skills/heartseeker.png"
+    },
+    {
+      "id": "Rogue_BladeShift",
+      "name": "Blade Shift",
+      "slug": "blade_shift",
+      "icon": "/icons/skills/blade_shift.png"
+    },
+    {
+      "id": "Rogue_SmokeBomb",
+      "name": "Smoke Bomb",
+      "slug": "smoke_bomb",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Rogue_Barrage",
+      "name": "Barrage",
+      "slug": "barrage",
+      "icon": "/icons/skills/barrage.png"
+    },
+    {
+      "id": "Rogue_Caltrops",
+      "name": "Caltrops",
+      "slug": "caltrops",
+      "icon": "/icons/skills/caltrops.png"
+    },
+    {
+      "id": "Rogue_InvigoratingStrike",
+      "name": "Invigorating Strike",
+      "slug": "invigorating_strike",
+      "icon": "/icons/skills/invigorating_strike.png"
+    },
+    {
+      "id": "Rogue_ShadowStep",
+      "name": "Shadow Step",
+      "slug": "shadow_step",
+      "icon": "/icons/skills/shadow_step.png"
+    },
+    {
+      "id": "Rogue_ColdImbue",
+      "name": "Cold Imbue",
+      "slug": "cold_imbue",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Rogue_PenetratingShot",
+      "name": "Penetrating Shot",
+      "slug": "penetrating_shot",
+      "icon": "/icons/skills/penetrating_shot.png"
+    },
+    {
+      "id": "Rogue_PoisonImbue",
+      "name": "Poison Imbue",
+      "slug": "poison_imbue",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Rogue_Puncture",
+      "name": "Puncture",
+      "slug": "puncture",
+      "icon": "/icons/skills/puncture.png"
+    },
+    {
+      "id": "Rogue_DarkShroud",
+      "name": "Dark Shroud",
+      "slug": "dark_shroud",
+      "icon": "/icons/skills/dark_shroud.png"
+    },
+    {
+      "id": "Rogue_PoisonTrap",
+      "name": "Poison Trap",
+      "slug": "poison_trap",
+      "icon": "/icons/skills/poison_trap.png"
+    },
+    {
+      "id": "Rogue_TwistingBlades",
+      "name": "Twisting Blades",
+      "slug": "twisting_blades",
+      "icon": "/icons/skills/twisting_blades.png"
+    },
+    {
+      "id": "Rogue_Dash",
+      "name": "Dash",
+      "slug": "dash",
+      "icon": "/icons/skills/dash.png"
+    },
+    {
+      "id": "Rogue_ShadowImbue",
+      "name": "Shadow Imbue",
+      "slug": "shadow_imbue",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Rogue_ForcefulArrow",
+      "name": "Forceful Arrow",
+      "slug": "forceful_arrow",
+      "icon": "/icons/skills/forceful_arrow.png"
+    },
+    {
+      "id": "Rogue_RainofArrows",
+      "name": "Rainof Arrows",
+      "slug": "rainof_arrows",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Rogue_ShadowClone",
+      "name": "Shadow Clone",
+      "slug": "shadow_clone",
+      "icon": "/icons/skills/shadow_clone.png"
+    },
+    {
+      "id": "Rogue_DeathTrap",
+      "name": "Death Trap",
+      "slug": "death_trap",
+      "icon": "/icons/skills/death_trap.png"
+    },
+    {
+      "id": "Rogue_RapidFire",
+      "name": "Rapid Fire",
+      "slug": "rapid_fire",
+      "icon": "/icons/skills/rapid_fire.png"
+    },
+    {
+      "id": "Rogue_Stealth",
+      "name": "Stealth",
+      "slug": "stealth",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Rogue_DanceOfKnives",
+      "name": "Dance Of Knives",
+      "slug": "dance_of_knives",
+      "icon": "/icons/skills/dance_of_knives.png"
+    }
+  ],
+  "sorcerer": [
+    {
+      "id": "Sorcerer_FlameShield",
+      "name": "Flame Shield",
+      "slug": "flame_shield",
+      "icon": "/icons/skills/flame_shield.png"
+    },
+    {
+      "id": "Sorcerer_FrostNova",
+      "name": "Frost Nova",
+      "slug": "frost_nova",
+      "icon": "/icons/skills/frost_nova.png"
+    },
+    {
+      "id": "Sorcerer_IceArmor",
+      "name": "Ice Armor",
+      "slug": "ice_armor",
+      "icon": "/icons/skills/ice_armor.png"
+    },
+    {
+      "id": "Sorcerer_ChargedBolt",
+      "name": "Charged Bolt",
+      "slug": "charged_bolt",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Sorcerer_Hydra",
+      "name": "Hydra",
+      "slug": "hydra",
+      "icon": "/icons/skills/hydra.png"
+    },
+    {
+      "id": "Sorcerer_IceBlades",
+      "name": "Ice Blades",
+      "slug": "ice_blades",
+      "icon": "/icons/skills/ice_blades.png"
+    },
+    {
+      "id": "Sorcerer_Meteor",
+      "name": "Meteor",
+      "slug": "meteor",
+      "icon": "/icons/skills/meteor.png"
+    },
+    {
+      "id": "Sorcerer_Blizzard",
+      "name": "Blizzard",
+      "slug": "blizzard",
+      "icon": "/icons/skills/blizzard.png"
+    },
+    {
+      "id": "Sorcerer_FrozenOrb",
+      "name": "Frozen Orb",
+      "slug": "frozen_orb",
+      "icon": "/icons/skills/frozen_orb.png"
+    },
+    {
+      "id": "Sorcerer_LightningSpear",
+      "name": "Lightning Spear",
+      "slug": "lightning_spear",
+      "icon": "/icons/skills/lightning_spear.png"
+    },
+    {
+      "id": "Sorcerer_Teleport",
+      "name": "Teleport",
+      "slug": "teleport",
+      "icon": "/icons/skills/teleport.png"
+    },
+    {
+      "id": "Sorcerer_BallLightning",
+      "name": "Ball Lightning",
+      "slug": "ball_lightning",
+      "icon": "/icons/skills/ball_lightning.png"
+    },
+    {
+      "id": "Sorcerer_Inferno",
+      "name": "Inferno",
+      "slug": "inferno",
+      "icon": "/icons/skills/inferno.png"
+    },
+    {
+      "id": "Sorcerer_UnstableCurrents",
+      "name": "Unstable Currents",
+      "slug": "unstable_currents",
+      "icon": "/icons/skills/unstable_currents.png"
+    },
+    {
+      "id": "Sorcerer_DeepFreeze",
+      "name": "Deep Freeze",
+      "slug": "deep_freeze",
+      "icon": "/icons/skills/deep_freeze.png"
+    },
+    {
+      "id": "Sorcerer_Incinerate",
+      "name": "Incinerate",
+      "slug": "incinerate",
+      "icon": "/icons/skills/incinerate.png"
+    },
+    {
+      "id": "Sorcerer_Spark",
+      "name": "Spark",
+      "slug": "spark",
+      "icon": "/icons/skills/spark.png"
+    },
+    {
+      "id": "Sorcerer_FireBolt",
+      "name": "Fire Bolt",
+      "slug": "fire_bolt",
+      "icon": "/icons/skills/fire_bolt.png"
+    },
+    {
+      "id": "Sorcerer_ArcLash",
+      "name": "Arc Lash",
+      "slug": "arc_lash",
+      "icon": "/icons/skills/arc_lash.png"
+    },
+    {
+      "id": "Sorcerer_Fireball",
+      "name": "Fireball",
+      "slug": "fireball",
+      "icon": "/icons/skills/fireball.png"
+    },
+    {
+      "id": "Sorcerer_ChainLightning",
+      "name": "Chain Lightning",
+      "slug": "chain_lightning",
+      "icon": "/icons/skills/chain_lightning.png"
+    },
+    {
+      "id": "Sorcerer_IceShards",
+      "name": "Ice Shards",
+      "slug": "ice_shards",
+      "icon": "/icons/skills/ice_shards.png"
+    },
+    {
+      "id": "Sorcerer_FrostBolt",
+      "name": "Frost Bolt",
+      "slug": "frost_bolt",
+      "icon": "/icons/skills/frost_bolt.png"
+    },
+    {
+      "id": "Sorcerer_Firewall",
+      "name": "Firewall",
+      "slug": "firewall",
+      "icon": "/icons/skills/firewall.png"
+    },
+    {
+      "id": "X1_Sorcerer_Familiar",
+      "name": "Sorcerer Familiar",
+      "slug": "sorcerer_familiar",
+      "icon": "/icons/skills/fallback.svg"
+    }
+  ],
+  "spiritborn": [
+    {
+      "id": "Spiritborn_Centipede_Basic",
+      "name": "Centipede Basic",
+      "slug": "centipede_basic",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Eagle_Focus",
+      "name": "Eagle Focus",
+      "slug": "eagle_focus",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Gorilla_Core",
+      "name": "Gorilla Core",
+      "slug": "gorilla_core",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Centipede_Defensive",
+      "name": "Centipede Defensive",
+      "slug": "centipede_defensive",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Gorilla_Potency",
+      "name": "Gorilla Potency",
+      "slug": "gorilla_potency",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Jaguar_Basic",
+      "name": "Jaguar Basic",
+      "slug": "jaguar_basic",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Gorilla_Basic",
+      "name": "Gorilla Basic",
+      "slug": "gorilla_basic",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Eagle_Basic",
+      "name": "Eagle Basic",
+      "slug": "eagle_basic",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Jaguar_Core",
+      "name": "Jaguar Core",
+      "slug": "jaguar_core",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Eagle_Core",
+      "name": "Eagle Core",
+      "slug": "eagle_core",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Centipede_Focus",
+      "name": "Centipede Focus",
+      "slug": "centipede_focus",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Jaguar_Potency",
+      "name": "Jaguar Potency",
+      "slug": "jaguar_potency",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Gorilla_Defensive1",
+      "name": "Gorilla Defensive1",
+      "slug": "gorilla_defensive1",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Eagle_Focus2",
+      "name": "Eagle Focus2",
+      "slug": "eagle_focus2",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Jaguar_Focus",
+      "name": "Jaguar Focus",
+      "slug": "jaguar_focus",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Gorilla_Defensive2",
+      "name": "Gorilla Defensive2",
+      "slug": "gorilla_defensive2",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Jaguar_Defensive",
+      "name": "Jaguar Defensive",
+      "slug": "jaguar_defensive",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Centipede_Potency",
+      "name": "Centipede Potency",
+      "slug": "centipede_potency",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Centipede_Ultimate",
+      "name": "Centipede Ultimate",
+      "slug": "centipede_ultimate",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Eagle_Ultimate",
+      "name": "Eagle Ultimate",
+      "slug": "eagle_ultimate",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Jaguar_Ultimate",
+      "name": "Jaguar Ultimate",
+      "slug": "jaguar_ultimate",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Gorilla_Ultimate",
+      "name": "Gorilla Ultimate",
+      "slug": "gorilla_ultimate",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Eagle_Potency1",
+      "name": "Eagle Potency1",
+      "slug": "eagle_potency1",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Spiritborn_Centipede_Core",
+      "name": "Centipede Core",
+      "slug": "centipede_core",
+      "icon": "/icons/skills/fallback.svg"
+    }
+  ],
+  "warlock": [
+    {
+      "id": "Warlock_WraithStep",
+      "name": "Wraith Step",
+      "slug": "wraith_step",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_Demonic_Breath",
+      "name": "Demonic Breath",
+      "slug": "demonic_breath",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_BurningSkull",
+      "name": "Burning Skull",
+      "slug": "burning_skull",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_SigilOfFlames",
+      "name": "Sigil Of Flames",
+      "slug": "sigil_of_flames",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_ChainTotem",
+      "name": "Chain Totem",
+      "slug": "chain_totem",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_DemonicBombard",
+      "name": "Demonic Bombard",
+      "slug": "demonic_bombard",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_Demonic_Drain",
+      "name": "Demonic Drain",
+      "slug": "demonic_drain",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_DemonicSlash",
+      "name": "Demonic Slash",
+      "slug": "demonic_slash",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_SigilOfSummons",
+      "name": "Sigil Of Summons",
+      "slug": "sigil_of_summons",
+      "icon": "/icons/skills/sigil_of_summons.png"
+    },
+    {
+      "id": "Warlock_ChainLash",
+      "name": "Chain Lash",
+      "slug": "chain_lash",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_SigilOfShadows",
+      "name": "Sigil Of Shadows",
+      "slug": "sigil_of_shadows",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_Demon_Wall",
+      "name": "Demon Wall",
+      "slug": "demon_wall",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_DemonDefender",
+      "name": "Demon Defender",
+      "slug": "demon_defender",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_ShadowShred",
+      "name": "Shadow Shred",
+      "slug": "shadow_shred",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_DemonicGrasp",
+      "name": "Demonic Grasp",
+      "slug": "demonic_grasp",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_Fissure",
+      "name": "Fissure",
+      "slug": "fissure",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_UltimateDemon",
+      "name": "Ultimate Demon",
+      "slug": "ultimate_demon",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_HellStorm",
+      "name": "Hell Storm",
+      "slug": "hell_storm",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_Doombringer",
+      "name": "Doombringer",
+      "slug": "doombringer",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_ArchDemon",
+      "name": "Arch Demon",
+      "slug": "arch_demon",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_BrimstoneOrb",
+      "name": "Brimstone Orb",
+      "slug": "brimstone_orb",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_Summon_Lunatic",
+      "name": "Summon Lunatic",
+      "slug": "summon_lunatic",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_HexCast",
+      "name": "Hex Cast",
+      "slug": "hex_cast",
+      "icon": "/icons/skills/fallback.svg"
+    },
+    {
+      "id": "Warlock_TailWhip",
+      "name": "Tail Whip",
+      "slug": "tail_whip",
+      "icon": "/icons/skills/fallback.svg"
+    }
+  ]
+}

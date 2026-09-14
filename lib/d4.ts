@@ -1,5 +1,5 @@
-import catalog from '@/data/d4/catalog.json'
 import timers from '@/data/d4/timers.json'
+import type { SkillTree } from '@/lib/d4-tree'
 
 export const D4_CLASSES = [
   { id: 'spiritborn', nome: 'Spiritborn', icon: '/icons/classes/spiritborn.png', playable: true },
@@ -15,28 +15,28 @@ export const D4_CLASSES = [
 
 export type ClassId = (typeof D4_CLASSES)[number]['id']
 
-type SkillRow = { id: string; name: string; levelReq: number; kind?: string }
-
-export function classKit(id: string) {
-  const data = catalog as typeof catalog & {
-    upcoming: { amazon: { actives: SkillRow[]; note?: string } }
-    classes: Record<string, { actives: SkillRow[]; modifiers: SkillRow[]; passives: SkillRow[] }>
-  }
-  if (id === 'amazon') return data.upcoming.amazon
-  return data.classes[id]
+const TREE_LOADERS: Record<string, () => Promise<{ default: SkillTree }>> = {
+  barbarian: () => import('@/data/d4/trees/barbarian.json') as unknown as Promise<{ default: SkillTree }>,
+  druid: () => import('@/data/d4/trees/druid.json') as unknown as Promise<{ default: SkillTree }>,
+  necromancer: () => import('@/data/d4/trees/necromancer.json') as unknown as Promise<{ default: SkillTree }>,
+  rogue: () => import('@/data/d4/trees/rogue.json') as unknown as Promise<{ default: SkillTree }>,
+  sorcerer: () => import('@/data/d4/trees/sorcerer.json') as unknown as Promise<{ default: SkillTree }>,
+  spiritborn: () => import('@/data/d4/trees/spiritborn.json') as unknown as Promise<{ default: SkillTree }>,
+  paladin: () => import('@/data/d4/trees/paladin.json') as unknown as Promise<{ default: SkillTree }>,
+  warlock: () => import('@/data/d4/trees/warlock.json') as unknown as Promise<{ default: SkillTree }>,
 }
 
-export function skillOptions(id: string) {
-  const kit = classKit(id)
-  if (!kit || !('actives' in kit) || !Array.isArray(kit.actives)) return []
-  const passives = 'passives' in kit && Array.isArray(kit.passives) ? kit.passives : []
-  return [...kit.actives, ...passives]
+export async function loadSkillTree(id: string): Promise<SkillTree | null> {
+  const load = TREE_LOADERS[id]
+  if (!load) return null
+  const mod = await load()
+  return mod.default
 }
 
-export { catalog, timers }
+export { timers }
 
 export function nextWindow(kind: 'helltide' | 'worldBoss' | 'legion', now = Date.now()) {
-  const cfg = timers[kind]
+  const cfg = timers[kind] as { epochUtc: string; cycleMs: number; activeMs: number }
   const epoch = Date.parse(cfg.epochUtc)
   const elapsed = now - epoch
   const cycle = cfg.cycleMs

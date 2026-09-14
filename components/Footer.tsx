@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { Swords } from 'lucide-react'
 import { DISCORD_INVITE, WHATSAPP } from '@/lib/site'
 
 export default function Footer() {
@@ -9,25 +10,42 @@ export default function Footer() {
   if (path === '/planner') return null
 
   return (
-    <footer className="mt-auto border-t border-green-border/40 px-5 py-12">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8">
+    <footer className="mt-auto border-t border-[rgba(58,138,24,0.28)] bg-[#070907]">
+      <div className="max-w-7xl mx-auto px-5 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
-          <p className="font-display text-white">ASILO</p>
-          <p className="mt-2 text-sm text-green-muted max-w-sm">
-            Um canto de Santuário: história, classes, mapas e builds. Lar Recreativo de Idosos.
+          <p className="font-display text-3xl tracking-[0.2em] text-white">ASILO</p>
+          <p className="mt-4 text-sm leading-7 text-bone/65 max-w-xs">
+            Lar Recreativo de Idosos. Santuário, classes, mapas e o que o clã está jogando nesta season.
           </p>
         </div>
-        <nav className="flex flex-wrap gap-6 text-sm text-green-muted">
-          <Link href="/notas">Patch notes</Link>
-          <Link href="/lore">Lore</Link>
-          <Link href="/mapas">Mapas</Link>
-          <a href={DISCORD_INVITE} target="_blank" rel="noreferrer">
-            Discord
-          </a>
-          <a href={WHATSAPP} target="_blank" rel="noreferrer">
-            WhatsApp
-          </a>
-        </nav>
+        <div>
+          <p className="font-display text-sm tracking-[0.16em] text-green-bright mb-4">Casa</p>
+          <nav className="flex flex-col gap-3 text-bone/80">
+            <Link href="/lore">Lore</Link>
+            <Link href="/classes">Classes</Link>
+            <Link href="/mapas">Mapas</Link>
+            <Link href="/rank">Rank do clã</Link>
+            <Link href="/notas">Patch notes</Link>
+          </nav>
+        </div>
+        <div>
+          <p className="font-display text-sm tracking-[0.16em] text-green-bright mb-4">Jogar</p>
+          <nav className="flex flex-col gap-3 text-bone/80">
+            <a href={DISCORD_INVITE} target="_blank" rel="noreferrer">
+              Discord
+            </a>
+            <a href={WHATSAPP} target="_blank" rel="noreferrer">
+              WhatsApp
+            </a>
+            <Link href="/cla">Recrutamento</Link>
+            <Link href="/gate" aria-label="Painel" className="opacity-30 hover:opacity-100 w-fit">
+              <Swords size={16} />
+            </Link>
+          </nav>
+        </div>
+      </div>
+      <div className="border-t border-green-border/20 px-5 py-5 text-center text-[11px] text-green-muted">
+        Não afiliado à Blizzard. Diablo IV é da Activision Blizzard.
       </div>
     </footer>
   )

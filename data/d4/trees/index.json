@@ -1,0 +1,61 @@
+{
+  "source": "https://raw.githubusercontent.com/DiabloTools/d4data/master",
+  "classes": {
+    "barbarian": {
+      "file": "Barbarian.skl.json",
+      "nodes": 198,
+      "edges": 312,
+      "actives": 24,
+      "bytes": 41063
+    },
+    "druid": {
+      "file": "Druid.skl.json",
+      "nodes": 257,
+      "edges": 416,
+      "actives": 26,
+      "bytes": 51825
+    },
+    "necromancer": {
+      "file": "Necromancer.skl.json",
+      "nodes": 190,
+      "edges": 299,
+      "actives": 23,
+      "bytes": 40112
+    },
+    "rogue": {
+      "file": "Rogue.skl.json",
+      "nodes": 198,
+      "edges": 312,
+      "actives": 24,
+      "bytes": 40335
+    },
+    "sorcerer": {
+      "file": "Sorcerer.skl.json",
+      "nodes": 207,
+      "edges": 329,
+      "actives": 25,
+      "bytes": 42518
+    },
+    "spiritborn": {
+      "file": "Spiritborn.skl.json",
+      "nodes": 198,
+      "edges": 312,
+      "actives": 24,
+      "bytes": 45085
+    },
+    "paladin": {
+      "file": "Paladin_NEW.skl.json",
+      "nodes": 198,
+      "edges": 312,
+      "actives": 24,
+      "bytes": 42652
+    },
+    "warlock": {
+      "file": "Warlock.skl.json",
+      "nodes": 198,
+      "edges": 312,
+      "actives": 24,
+      "bytes": 42421
+    }
+  }
+}
