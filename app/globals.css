@@ -108,11 +108,13 @@
 
 .asilo-fog {
   position: absolute;
-  width: 140%;
-  height: 80%;
+  width: 180%;
+  height: 110%;
   left: -20%;
-  top: -10%;
-  background: radial-gradient(ellipse at 40% 30%, rgba(58, 138, 24, 0.14), transparent 58%);
+  top: -20%;
+  background:
+    radial-gradient(ellipse at 32% 38%, rgba(58, 138, 24, 0.18), transparent 55%),
+    radial-gradient(ellipse at 78% 42%, rgba(58, 138, 24, 0.12), transparent 50%);
   filter: blur(48px);
   animation: asilo-drift 42s ease-in-out infinite alternate;
 }
@@ -165,6 +167,77 @@
     linear-gradient(180deg, #8a7350, #3a2e1c) border-box;
 }
 
+.asilo-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  height: 2px;
+  width: 100%;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transform: scaleX(var(--scroll, 0));
+  background: linear-gradient(90deg, #3a8a18, #5ab82a);
+}
+
+.asilo-nav {
+  position: relative;
+  font-family: var(--font-nav);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  transition: color 0.25s ease;
+}
+.asilo-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  height: 1px;
+  width: 0;
+  background: #5ab82a;
+  transition: width 0.28s ease;
+}
+.asilo-nav:hover {
+  color: #fff;
+}
+.asilo-nav:hover::after,
+.asilo-nav.text-white::after {
+  width: 100%;
+}
+
+.asilo-row {
+  transition: background-color 0.35s ease;
+}
+.asilo-row img {
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+.asilo-row:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+.asilo-row:hover img {
+  transform: scale(1.07);
+  filter: brightness(1.08);
+}
+
+.asilo-art {
+  transition: border-color 0.4s ease;
+}
+.asilo-art img {
+  transition: transform 0.8s ease, opacity 0.6s ease;
+}
+.asilo-art:hover img {
+  transform: scale(1.035);
+}
+
+.footer-link {
+  transition: color 0.25s ease, padding-left 0.25s ease;
+}
+.footer-link:hover {
+  color: #fff;
+  padding-left: 6px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .asilo-grain {
     opacity: 0.03;
@@ -172,6 +245,13 @@
   .asilo-fog,
   .asilo-fog-ember {
     animation: none;
+  }
+  .asilo-nav::after,
+  .asilo-row img,
+  .asilo-art img,
+  .footer-link,
+  .btn-d4 {
+    transition: none;
   }
 }
 

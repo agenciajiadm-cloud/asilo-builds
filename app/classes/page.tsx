@@ -31,11 +31,11 @@ const SLUG: Record<string, string> = {
 
 export default function ClassesPage() {
   return (
-    <div className="px-5 max-w-6xl mx-auto pt-16 pb-32">
+    <div className="px-5 max-w-6xl mx-auto pt-8 pb-24">
       <p className="text-sm text-green-bright mb-4">Classes</p>
       <h1 className="font-display text-4xl md:text-6xl text-white mb-6">Nove jeitos de atravessar Santuário</h1>
-      <p className="max-w-2xl text-lg leading-8 text-bone/85 mb-14">
-        Retrato, skills do kit e a história. A build da season fica no montador.
+      <p className="max-w-2xl text-lg leading-8 text-bone/85 mb-8">
+        Retrato, skills do kit e a história da classe.
       </p>
       <ul className="divide-y divide-green-border/40 border-y border-green-border/40">
         {D4_CLASSES.map((c) => {
@@ -44,7 +44,7 @@ export default function ClassesPage() {
             <li key={c.id}>
               <Link
                 href={`/classes/${SLUG[c.id]}`}
-                className="flex items-stretch gap-6 py-6 hover:bg-white/[0.02]"
+                className="flex items-stretch gap-6 py-6 asilo-row"
               >
                 <div className="relative w-28 h-36 md:w-40 md:h-52 shrink-0 overflow-hidden border border-green-border/40 bg-[#080a08]">
                   {photo ? (

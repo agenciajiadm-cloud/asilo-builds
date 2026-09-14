@@ -44,7 +44,7 @@ export default async function ClassGuidePage({ params }: { params: Promise<{ slu
   const skills = (classId && CATALOG[classId] ? CATALOG[classId] : []).slice(0, 16)
 
   return (
-    <div className="relative px-5 max-w-4xl mx-auto pt-16 pb-32">
+    <div className="relative px-5 max-w-4xl mx-auto pt-8 pb-24">
       <Fog />
       <div className="relative">
         <Link href="/classes" className="text-[11px] tracking-[0.25em] uppercase text-green-muted font-display">
@@ -88,11 +88,6 @@ export default async function ClassGuidePage({ params }: { params: Promise<{ slu
         {skills.length === 0 && (
           <p className="text-sm leading-7 text-green-muted border-t border-green-border/40 pt-8">{page.skillsNote}</p>
         )}
-        <p className="mt-6">
-          <Link href="/planner" className="text-[11px] tracking-[0.2em] uppercase font-display text-green-bright">
-            Abrir planner desta classe
-          </Link>
-        </p>
       </div>
     </div>
   )

@@ -30,7 +30,7 @@ export default function DonateBox() {
 
   return (
     <section id="doar" className="border-t border-green-border/40">
-      <div className="max-w-7xl mx-auto px-5 py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-5 py-8 md:py-10">
         <p className="font-nav text-sm text-[#c88a1a] mb-2">Apoio</p>
         <h2 className="font-display text-2xl md:text-3xl text-white mb-3">Doar pro projeto</h2>
         <p className="max-w-xl text-sm leading-7 text-bone/70 mb-6">

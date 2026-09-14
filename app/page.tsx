@@ -18,7 +18,7 @@ export default async function Home() {
     <div className="relative">
       <HomeHero />
       <section className="relative overflow-hidden border-b border-green-border/40">
-        <div className="max-w-7xl mx-auto px-5 py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-5 py-8 md:py-12">
           <HomeTier initial={rows} />
         </div>
       </section>

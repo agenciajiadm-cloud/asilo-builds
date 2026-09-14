@@ -8,6 +8,8 @@ export const CLASS_PORTRAIT: Partial<Record<ClassId, string>> = {
   rogue: '/images/classes/rogue.jpeg',
   spiritborn: '/images/classes/spiritborn.webp',
   warlock: '/images/classes/warlock.avif',
+  druid: '/images/classes/druid.webp',
+  amazon: '/images/classes/amazon.jpg',
 }
 
 export const GUIDE_TO_CLASS: Record<string, ClassId> = {

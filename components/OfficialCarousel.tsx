@@ -48,9 +48,9 @@ export default function OfficialCarousel() {
 
   return (
     <section className="relative overflow-hidden border-t border-green-border/40">
-      <div className="max-w-7xl mx-auto px-5 py-16 md:py-20">
-        <p className="font-display text-sm tracking-[0.2em] text-[#c88a1a] mb-6">ARTE OFICIAL</p>
-        <a href={slide.href} target="_blank" rel="noreferrer" className="block relative aspect-[21/9] w-full overflow-hidden border border-[rgba(138,42,24,0.35)]">
+      <div className="max-w-7xl mx-auto px-5 py-8 md:py-12">
+        <p className="font-display text-sm tracking-[0.2em] text-[#c88a1a] mb-5">ARTE OFICIAL</p>
+        <a href={slide.href} target="_blank" rel="noreferrer" className="asilo-art block relative aspect-[21/9] w-full overflow-hidden border border-[rgba(138,42,24,0.35)] hover:border-[rgba(200,138,26,0.55)]">
           <Image
             key={slide.src}
             src={slide.src}

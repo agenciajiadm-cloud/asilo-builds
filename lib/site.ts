@@ -8,7 +8,6 @@ export const NAV = [
   { label: 'Classes', href: '/classes' },
   { label: 'Lore', href: '/lore' },
   { label: 'Mapas', href: '/mapas' },
-  { label: 'Montador', href: '/planner' },
   { label: 'Rank', href: '/rank' },
   { label: 'Clã', href: '/cla' },
   { label: 'Criadores', href: '/criadores' },

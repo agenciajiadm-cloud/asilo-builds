@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import ScrollProgress from '@/components/ScrollProgress'
 import CinematicRoot from '@/components/cinematic/CinematicRoot'
 
 const hero = Cinzel_Decorative({
@@ -28,8 +29,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="pt-BR" className={`${hero.variable} ${sans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bg-primary text-bone font-body">
         <CinematicRoot>
+          <ScrollProgress />
           <Header />
-          <main className="flex-grow pt-24">{children}</main>
+          <main className="flex-grow pt-[5.1rem]">{children}</main>
           <Footer />
         </CinematicRoot>
       </body>

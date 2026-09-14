@@ -19,7 +19,7 @@ export default function TierBoard({
 
   return (
     <section>
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-6">
         <div>
           <h2 className="font-display text-4xl md:text-6xl text-white leading-none">Tier list</h2>
           <p className="mt-4 max-w-lg text-sm leading-7 text-bone/70">
@@ -66,7 +66,7 @@ export default function TierBoard({
                     target="_blank"
                     rel="noreferrer"
                     title={b.name}
-                    className="group relative w-[72px] md:w-[84px] border border-green-border/30 bg-[#0c100c] p-1.5 hover:border-green-bright/70"
+                    className="group relative w-[72px] md:w-[84px] border border-green-border/30 bg-[#0c100c] p-1.5 hover:border-green-bright/70 hover:-translate-y-0.5 transition-transform duration-200"
                   >
                     <SkillIcon src={b.skill_icon} classSrc={CLASS_ICON[b.class_id]} name={b.name} size={72} />
                     <span className="mt-1 block text-[10px] leading-tight text-bone/80 text-center line-clamp-2 group-hover:text-green-bright">
