@@ -19,14 +19,14 @@ export default function TierBoard({
 
   return (
     <section>
-      <div className="flex flex-col items-center lg:items-end lg:flex-row justify-between gap-6 mb-6">
-        <div className="max-w-lg">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-6">
+        <div>
           <h2 className="font-display text-4xl md:text-6xl text-white leading-none">Tier list</h2>
-          <p className="mt-4 text-sm leading-7 text-bone/70">
+          <p className="mt-4 max-w-lg text-sm leading-7 text-bone/70">
             O que o clã está jogando agora. Clica no ícone e abre o guia — Maxroll, d4builds, vídeo, o que for.
           </p>
         </div>
-        <div className="flex border border-green-border/40 mx-auto lg:mx-0">
+        <div className="flex border border-green-border/40">
           {(['endgame', 'leveling'] as const).map((k) => (
             <button
               key={k}
@@ -55,7 +55,7 @@ export default function TierBoard({
               <div className={`flex items-center justify-center border-r ${TIER_TONE[letter]} font-display text-3xl md:text-5xl`}>
                 {letter}
               </div>
-              <div className="flex flex-wrap justify-center lg:justify-start gap-2 md:gap-3 p-3 md:p-5 min-h-[96px]">
+              <div className="flex flex-wrap gap-2 md:gap-3 p-3 md:p-5 min-h-[96px]">
                 {builds.length === 0 && (
                   <p className="text-[12px] text-green-muted self-center px-1">Vazio — o painel preenche daqui.</p>
                 )}

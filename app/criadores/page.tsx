@@ -13,7 +13,7 @@ export default function CriadoresPage() {
     <div className="px-5 max-w-4xl mx-auto pt-12 pb-28">
       <p className="font-nav text-sm text-green-bright mb-4">O clã na câmera</p>
       <h1 className="font-display text-5xl md:text-7xl text-white mb-6 tracking-[0.04em]">Criadores</h1>
-      <p className="max-w-2xl mx-auto lg:mx-0 text-lg leading-8 text-bone/80 mb-16">
+      <p className="max-w-2xl text-lg leading-8 text-bone/80 mb-16">
         Gente do ASILO que grava o jogo. Começa pelo SagaWine — Pit, farm e build em português.
       </p>
 

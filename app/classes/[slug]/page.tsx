@@ -50,7 +50,7 @@ export default async function ClassGuidePage({ params }: { params: Promise<{ slu
         <Link href="/classes" className="text-[11px] tracking-[0.25em] uppercase text-green-muted font-display">
           Classes
         </Link>
-        <div className="mt-6 grid lg:grid-cols-[minmax(0,1fr)_240px] gap-10 items-center lg:items-start justify-items-center lg:justify-items-stretch">
+        <div className="mt-6 grid md:grid-cols-[minmax(0,1fr)_240px] gap-10 items-start">
           <div>
             <h1 className="font-display text-5xl md:text-6xl text-white mb-6">{page.nome}</h1>
             <p className="text-lg leading-8 text-bone/85 mb-10">{page.lead}</p>
@@ -67,7 +67,7 @@ export default async function ClassGuidePage({ params }: { params: Promise<{ slu
         {skills.length > 0 && (
           <section className="mb-14">
             <h2 className="font-display text-2xl text-white mb-5">Skills</h2>
-            <ul className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-6 justify-items-center lg:justify-items-start text-left">
+            <ul className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-6">
               {skills.map((s) => (
                 <li key={s.name} className="flex items-center gap-3">
                   <SkillIcon src={s.icon} classSrc={cls?.icon} name={s.name} size={40} />

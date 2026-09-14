@@ -1,5 +1,5 @@
 import { Alegreya_Sans, Cinzel_Decorative } from 'next/font/google'
-import type { Metadata, Viewport } from 'next'
+import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import './globals.css'
 import Header from '@/components/Header'
@@ -19,12 +19,6 @@ const sans = Alegreya_Sans({
   weight: ['400', '500', '700'],
 })
 
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-  viewportFit: 'cover',
-}
-
 export const metadata: Metadata = {
   title: 'ASILO · Diablo 4',
   description: 'História de Santuário, classes, mapas e builds. Clã ASILO — Lar Recreativo de Idosos.',
@@ -37,7 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <CinematicRoot>
           <ScrollProgress />
           <Header />
-          <main className="flex-grow pt-[11.75rem] md:pt-[14rem] text-center lg:text-left">{children}</main>
+          <main className="flex-grow pt-[5.1rem]">{children}</main>
           <Footer />
         </CinematicRoot>
       </body>

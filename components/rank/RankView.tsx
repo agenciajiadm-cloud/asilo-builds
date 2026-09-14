@@ -43,7 +43,7 @@ export default function RankView({ initial }: { initial: ClanRun[] }) {
     <div className="px-5 max-w-7xl mx-auto pt-10 pb-28">
       <p className="font-display text-[#c88a1a] tracking-[0.2em] text-sm mb-4">CLÃ · SEASON 15</p>
       <h1 className="font-display text-5xl md:text-7xl text-white leading-[0.95] mb-6">Rank do clã</h1>
-      <p className="max-w-2xl mx-auto lg:mx-0 text-lg leading-8 text-bone/80 mb-14">
+      <p className="max-w-2xl text-lg leading-8 text-bone/80 mb-14">
         Pit e Torre separados. Preenche o formulário com vídeo da run — entra na hora. Depois a gente aperta o filtro se precisar.
       </p>
 
@@ -52,7 +52,7 @@ export default function RankView({ initial }: { initial: ClanRun[] }) {
         <Board title="Torre" rows={tower} showTime />
       </div>
 
-      <form onSubmit={submit} className="max-w-xl mx-auto lg:mx-0 border border-green-border/50 p-8">
+      <form onSubmit={submit} className="max-w-xl border border-green-border/50 p-8">
         <h2 className="font-display text-3xl text-white mb-6">Mandar run</h2>
         <div className="flex gap-2 mb-6">
           {(['pit', 'tower'] as const).map((k) => (
