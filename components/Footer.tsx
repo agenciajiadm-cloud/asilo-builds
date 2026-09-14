@@ -49,7 +49,7 @@ export default function Footer() {
         <p className="text-[11px] text-green-muted text-center sm:text-left">
           Não afiliado à Blizzard. Diablo IV é da Activision Blizzard.
         </p>
-        <img src="/images/d4-mark.png" alt="" width={48} height={43} className="opacity-80" />
+        <img src="/images/d4-mark.png" alt="" width={72} height={72} className="w-[72px] h-[72px] object-contain" />
       </div>
     </footer>
   )
