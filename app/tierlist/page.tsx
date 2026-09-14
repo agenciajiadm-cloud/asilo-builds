@@ -67,7 +67,7 @@ export default function TierList() {
           <div className="flex items-center justify-center gap-6">
             <div className="w-16 h-px bg-gradient-to-r from-transparent to-green-primary/40"></div>
             <span className="text-[11px] tracking-[8px] text-green-bright uppercase font-display font-bold">
-              Meta Tier List · S12
+              Meta · S15
             </span>
             <div className="w-16 h-px bg-gradient-to-l from-transparent to-green-primary/40"></div>
           </div>

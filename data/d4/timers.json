@@ -1,0 +1,18 @@
+{
+  "note": "Ciclos comunitários. Discord ASILO é a fonte ao vivo se o patch mudar o relógio. Não é scrape da helltides.com.",
+  "helltide": {
+    "epochUtc": "2023-06-06T13:30:00.000Z",
+    "cycleMs": 8100000,
+    "activeMs": 3600000
+  },
+  "worldBoss": {
+    "epochUtc": "2023-06-06T00:00:00.000Z",
+    "cycleMs": 21600000,
+    "activeMs": 900000
+  },
+  "legion": {
+    "epochUtc": "2023-06-06T00:00:00.000Z",
+    "cycleMs": 1500000,
+    "activeMs": 300000
+  }
+}

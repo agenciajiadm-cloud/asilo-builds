@@ -24,7 +24,7 @@ type BuildCardData = {
 }
 
 export default function BuildsPage() {
-  const [classeAtiva, setClasseAtiva] = useState('spiritborn')
+  const [classeAtiva, setClasseAtiva] = useState('all')
   const [builds, setBuilds] = useState<BuildCardData[]>([])
   const [loading, setLoading] = useState(true)
 
@@ -177,7 +177,7 @@ export default function BuildsPage() {
               </div>
               <div className="space-y-2">
                 <a
-                  href="https://discord.com/invite/4jhsRbrQ"
+                  href="https://discord.gg/zXd4y525yV"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center py-2 text-[9px] tracking-[2px] uppercase border border-green-primary bg-green-primary/10 text-green-primary hover:bg-green-primary hover:text-white transition-all duration-200 rounded-[1px]"

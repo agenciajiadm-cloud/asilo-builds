@@ -19,21 +19,18 @@
   --color-text-primary: #ffffff;
   --color-text-secondary: #94a3b8;
 
-  /* Nova Tipografia - Estilo 'Verdade Brutal' */
-  --font-display: "Inter", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  --color-ember: #8a2a18;
+  --color-bone: #c8d4b8;
+
+  --font-display: var(--font-cinzel), "Cinzel", Georgia, serif;
+  --font-body: var(--font-source), "Source Sans 3", system-ui, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 @layer base {
   body {
     background-color: var(--color-bg-primary);
-    background-image: 
-      radial-gradient(circle at 50% 0%, rgba(58, 138, 24, 0.08) 0%, transparent 70%),
-      linear-gradient(rgba(5, 6, 5, 0.8) 0%, rgba(5, 6, 5, 0.8) 100%),
-      url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
-    background-attachment: fixed;
-    color: var(--color-text-primary);
+    color: var(--color-bone);
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-body);
   }
@@ -96,4 +93,42 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #3a8a18;
+}
+
+.asilo-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  pointer-events: none;
+  opacity: 0.055;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.9'/%3E%3C/svg%3E");
+}
+
+.asilo-fog {
+  position: absolute;
+  width: 140%;
+  height: 80%;
+  left: -20%;
+  top: -10%;
+  background: radial-gradient(ellipse at 40% 30%, rgba(58, 138, 24, 0.14), transparent 58%);
+  filter: blur(48px);
+  animation: asilo-drift 42s ease-in-out infinite alternate;
+}
+.asilo-fog-ember {
+  background: radial-gradient(ellipse at 50% 40%, rgba(138, 42, 24, 0.16), transparent 60%);
+}
+@keyframes asilo-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(4%, 6%, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .asilo-grain {
+    opacity: 0.03;
+  }
+  .asilo-fog,
+  .asilo-fog-ember {
+    animation: none;
+  }
 }

@@ -1,80 +1,91 @@
 'use client'
+
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { DISCORD_INVITE, NAV } from '@/lib/site'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
+  const [open, setOpen] = useState(false)
+  const path = usePathname()
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  useEffect(() => {
+    setOpen(false)
+  }, [path])
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'bg-[#0a0c09]/90 backdrop-blur-xl border-b border-[#1a2a10] shadow-[0_10px_30px_rgba(0,0,0,0.6)] py-4'
-          : 'bg-transparent py-6'
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+        scrolled || open ? 'bg-[#050605]/95 border-b border-green-border/60' : 'bg-transparent border-b border-transparent'
       }`}
-      style={{ minHeight: '80px' }}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-full" style={{ minHeight: '80px' }}>
-
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-4 group">
-          <div className="relative">
-            <div className="absolute inset-0 bg-green-primary/20 blur-md rounded-full group-hover:bg-green-primary/40 transition-colors"></div>
-            <img
-              src="/images/logo.png"
-              alt="ASILO"
-              className="w-14 h-14 relative z-10 rounded-full border border-green-primary/30 bg-bg-primary/50"
-              onError={(e) => { e.currentTarget.style.display = 'none' }}
-            />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-[28px] font-display font-black tracking-[6px] text-white group-hover:text-green-bright transition-colors leading-none">
-              ASILO
-            </span>
-            <span className="text-[11px] tracking-[3px] text-green-muted uppercase font-display mt-0.5">
-              Lar Recreativo de Idosos
-            </span>
-          </div>
+      <div className="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between gap-4">
+        <Link href="/" className="flex items-center gap-3 min-w-0">
+          <img
+            src="/images/logo.png"
+            alt=""
+            className="w-11 h-11 rounded-full border border-green-primary/40 object-cover"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none'
+            }}
+          />
+          <span className="font-display text-xl tracking-[0.35em] text-white">ASILO</span>
         </Link>
 
-        {/* Navigation */}
-        <nav className="hidden lg:flex items-center gap-10">
-          {[
-            { label: 'Arsenal', href: '/' },
-            { label: 'Tier List', href: '/tierlist' },
-            { label: 'Build Planner', href: '/planner' },
-            { label: 'Recrutamento', href: '/recrutamento' },
-          ].map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-[12px] tracking-[3px] uppercase font-display font-bold text-green-muted hover:text-green-bright transition-colors duration-200 relative group/link"
-            >
-              {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-px bg-green-bright transition-all duration-300 group-hover/link:w-full"></span>
-            </Link>
-          ))}
+        <nav className="hidden xl:flex items-center gap-7">
+          {NAV.map((link) => {
+            const active = path === link.href || (link.href !== '/' && path.startsWith(link.href))
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`font-display text-[11px] tracking-[0.22em] uppercase ${
+                  active ? 'text-green-bright' : 'text-green-muted hover:text-bone'
+                }`}
+              >
+                {link.label}
+              </Link>
+            )
+          })}
         </nav>
 
-        {/* Discord CTA */}
-        <div className="flex items-center gap-4">
-          <a
-            href="https://discord.com/invite/4jhsRbrQ"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:flex px-8 py-3 text-[11px] tracking-[3px] uppercase font-display font-bold border border-green-primary/40 bg-green-primary/10 text-green-bright hover:bg-green-primary hover:text-white transition-all duration-300 rounded-[2px] shadow-[0_0_20px_rgba(58,138,24,0.1)]"
+        <div className="flex items-center gap-3">
+          <Link
+            href="/cla"
+            className="hidden sm:inline-flex px-5 py-2 text-[10px] tracking-[0.2em] uppercase font-display border border-green-primary/50 text-green-bright hover:bg-green-primary hover:text-white"
           >
+            Entrar no clã
+          </Link>
+          <button
+            type="button"
+            className="xl:hidden w-10 h-10 border border-green-border text-bone"
+            aria-label="Menu"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? '×' : '☰'}
+          </button>
+        </div>
+      </div>
+
+      {open && (
+        <div className="xl:hidden border-t border-green-border/40 bg-[#050605] px-5 py-6 flex flex-col gap-4">
+          {NAV.map((link) => (
+            <Link key={link.href} href={link.href} className="font-display tracking-[0.18em] uppercase text-bone">
+              {link.label}
+            </Link>
+          ))}
+          <a href={DISCORD_INVITE} target="_blank" rel="noreferrer" className="text-green-bright font-display tracking-[0.18em] uppercase">
             Discord
           </a>
         </div>
-
-      </div>
+      )}
     </header>
   )
 }
