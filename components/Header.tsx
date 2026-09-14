@@ -39,7 +39,7 @@ export default function Header() {
           <span className="font-display text-xl tracking-[0.35em] text-white">ASILO</span>
         </Link>
 
-        <nav className="hidden xl:flex items-center gap-7">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-7">
           {NAV.map((link) => {
             const active = path === link.href || (link.href !== '/' && path.startsWith(link.href))
             return (
@@ -65,7 +65,7 @@ export default function Header() {
           </Link>
           <button
             type="button"
-            className="xl:hidden w-10 h-10 border border-green-border text-bone"
+            className="lg:hidden w-10 h-10 border border-green-border text-bone"
             aria-label="Menu"
             onClick={() => setOpen((v) => !v)}
           >
@@ -75,7 +75,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="xl:hidden border-t border-green-border/40 bg-[#050605] px-5 py-6 flex flex-col gap-4">
+        <div className="lg:hidden border-t border-green-border/40 bg-[#050605] px-5 py-6 flex flex-col gap-4">
           {NAV.map((link) => (
             <Link key={link.href} href={link.href} className="font-display tracking-[0.18em] uppercase text-bone">
               {link.label}
